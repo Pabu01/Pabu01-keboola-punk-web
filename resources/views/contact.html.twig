@@ -1,0 +1,71 @@
+{% extends "layout.html.twig" %}
+
+{% block head %}
+
+		<div class="header contact-header"><div class="in">
+			{% include "header.html.twig" %}
+			<article>
+				<h1>Contact</h1>
+				<p>Just drop us a line at <a href="mailto:info@keboola.com">info@keboola.com</a></p>
+			</article>
+		</div></div>
+{% endblock %}
+
+{% block content %}
+		<section>
+			<div class="contact-content"><div class="in">
+				<article>
+					<h1>Keboola s.r.o</h1>
+					<h2>#PRAGUE</h2>
+					<p>
+						Křižíkova 488/115<br>
+						186 00 Prague 8<br>
+						Czech Republic
+					</p>
+					<p>
+						ID: 28502787<br>
+						VAT ID: CZ28502787
+					</p>
+					<p>
+						<strong>Bank account</strong><br>
+						225149068/0300 (ČSOB)<br>
+						IBAN: CZ35 0300 0000 0002 2514 9068
+					</p>
+					<a href="" class="btn btn-white">View in GMaps</a>
+
+					<h1>Keboola Data Services, Inc.</h1>
+					<h2>#VANCOUVER</h2>
+					<p>
+						210 - 1461 Johnston Road<br>
+						White Rock, BC<br>
+						V4B 3Z4
+					</p>
+					<a href="" class="btn btn-white">View in GMaps</a>
+
+					<h1>Keboola Singapore Pte Ltd</h1>
+					<h2>#SINGAPORE</h2>
+					<p>
+						143 Cecil Street<br>
+						#16-04 GB Building<br>
+						Singapore 069542
+					</p>
+					<a href="" class="btn btn-white">View in GMaps</a>
+				</article>
+				<div class="pull-right">
+					<div class="contact-form">
+						<h2>If you are interested in our products or just want to ask something, pleasefill out the contact form below.</h2>
+						<label for="item-name" class="item-input"><span>Name</span><input type="text" name="item-name" id="item-name"></label>
+						<label for="item-email" class="item-input"><span>Email</span><input type="text" name="item-email" id="item-email"></label>
+						<label for="item-phone" class="item-input"><span>Phone number</span><input type="text" name="item-phone" id="item-phone"></label>
+						<label for="item-message" class="item-textarea"><span>Leave us a message</span><textarea name="item-message" id="item-message" cols="30" rows="10"></textarea></label>
+						<p>I would like to: </p>
+						<label for="" class="item-checkbox"><input type="checkbox" name="checkbox" id="checkbox-1"> See a demo</label>
+						<label for="" class="item-checkbox"><input type="checkbox" name="checkbox" id="checkbox-2"> Be invited to the next webinar</label>
+						<label for="" class="item-checkbox"><input type="checkbox" name="checkbox" id="checkbox-3"> Start a trial with my data right away</label>
+						<label for="" class="item-checkbox"><input type="checkbox" name="checkbox" id="checkbox-4"> Get a cup of great coffee</label>
+						<button type="submit" class="btn btn-white">Send</button>
+					</div>
+				</div>
+			</div></div>
+		</section>
+{% endblock %}

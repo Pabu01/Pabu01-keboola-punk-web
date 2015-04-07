@@ -1,0 +1,73 @@
+{% extends "layout.html.twig" %}
+
+{% block head %}
+		<div class="header partners-header"><div class="in">
+			{% include "header.html.twig" %}
+			<article>
+				<h1>Partners</h1>
+				<ul class="partners-head-list">
+					<li>
+						<i class="ico-first"></i>
+						<h2><strong>IMPLEMENTATION</strong><br>partners</h2>
+						<p>Get help with business questions,  setup of the whole data process and delivery. Look for vertical knowledge.</p>
+					</li>
+					<li>
+						<i class="ico-second"></i>
+						<h2><strong>DEVELOPER</strong><br>partners</h2>
+						<p>Data Science apps, special apps, transformation templates, etc. Develop your app and deliver it in Docker to us.</p>
+					</li>
+					<li>
+						<i class="ico-third"></i>
+						<h2><strong>OEM KEBOOLA</strong><br>partners</h2>
+						<p>OEM partners consume whole Keboola stack to design their own data products, which they resell under their own brand.</p>
+					</li>
+				</ul>
+			</article>
+		</div></div>
+{% endblock %}
+
+{% block content %}
+		<section>
+			<div class="article-box"><div class="in-second">
+				<h1>Browse Keboola <strong>partners</strong></h1>
+				<ul class="partners-list">
+					<li><article>
+						<h1>Ascoria</h1>
+						<h2>#OEM #BUSINESS #PRAGUE</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo ...</p>
+						<a href="{{ path('partner_detail', {partner: 'ascoria'}) }}" class="btn btn-white">Partner detail</a>
+					</article></li>
+					<li><article>
+						<h1>BizzTreat.com</h1>
+						<h2>#INTEGRATION #DATAHERO</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo ...</p>
+						<a href="{{ path('partner_detail', {partner: 'bizztreat'}) }}" class="btn btn-white">Partner detail</a>
+					</article></li>
+					<li><article>
+						<h1>Hash - Vojta Roček</h1>
+						<h2>#OEM #BUSINESS #PRAGUE</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo ...</p>
+						<a href="{{ path('partner_detail', {partner: 'vojta-rocek'}) }}" class="btn btn-white">Partner detail</a>
+					</article></li>
+					<li><article>
+						<h1>Logio.cz</h1>
+						<h2>#OEM #BUSINESS #PRAGUE</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo ...</p>
+						<a href="{{ path('partner_detail', {partner: 'logio'}) }}" class="btn btn-white">Partner detail</a>
+					</article></li>
+					<li><article>
+						<h1>ZOOM International</h1>
+						<h2>#OEM #BUSINESS #PRAGUE</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo ...</p>
+						<a href="{{ path('partner_detail', {partner: 'zoom-international'}) }}" class="btn btn-white">Partner detail</a>
+					</article></li>
+					<li><article>
+						<h1>Marek Šoltýz</h1>
+						<h2>#INTEGRATION #DATAHERO</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo ...</p>
+						<a href="{{ path('partner_detail', {partner: 'marek-soltyz'}) }}" class="btn btn-white">Partner detail</a>
+					</article></li>
+				</ul>
+			</div></div>
+		</section>
+{% endblock %}
