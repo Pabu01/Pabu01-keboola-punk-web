@@ -43,6 +43,16 @@ $app->get('/stories/{story}', function ($story) use ($app) {
 });
 
 
+// use-cases
+$app->get('/use-cases', function () use ($app) {
+    return $app['twig']->render('use-cases/mcpenn.html.twig');
+})->bind('use-cases');
+
+$app->get('/use-cases/{story}', function ($story) use ($app) {
+    return $app['twig']->render('use-cases/' . $story . '.html.twig');
+});
+
+
 // contact
 $app->get('/contact', function () use ($app) {
     return $app['twig']->render('contact.html.twig');
