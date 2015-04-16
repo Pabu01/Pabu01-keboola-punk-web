@@ -35,12 +35,12 @@ $app->get('/partners/{partner}', function ($partner) use ($app) {
 
 // stories
 $app->get('/stories', function () use ($app) {
-    return $app['twig']->render('stories/mcpenn.html.twig');
+    return $app['twig']->render('stories/h1.html.twig');
 })->bind('stories');
 
 $app->get('/stories/{story}', function ($story) use ($app) {
     return $app['twig']->render('stories/' . $story . '.html.twig');
-});
+})->bind('story');
 
 
 // use-cases

@@ -2776,3 +2776,7 @@ section p {
 .article .article-img-full img {
 	max-width: 100%
 }
+
+.case-study-h1 {
+	background: url(../img/home-bg.jpg) center center no-repeat #172438;
+}
