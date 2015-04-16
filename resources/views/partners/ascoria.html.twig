@@ -19,17 +19,9 @@
 		<section>
 			<div class="partners-detail-head"><div class="in">
 				<ul>
-					<!--<li class="item-first">
-						<p>87%</p>
-						<h2>Clients<br>score</h2>
-					</li>
-					<li class="item-second">
-						<p>102 GB</p>
-						<h2>Daily volume<br>of data</h2>
-					</li>-->
 					<li class="item-first">
-						<p>Logistics & horsesense</p>
-						<h2>TOP EXPERTISE<br>of partner</h2>
+						<p>Retail skills</p>
+						<h2>TOP EXPERTISE of partner</h2>
 					</li>
 				</ul>
 			</div></div>
@@ -39,8 +31,7 @@
 					<h1>Reference</h1>
 					<h2>McPen</h2>
 					<p>Milan Petr<br />Founder and managing director</p>
-					<a href="" class="btn btn-white">Show More</a>
-
+					<a href="{{ path('story', {'story': 'mcpen'}) }}" class="btn btn-white">Show More</a>
 				</div>
 			</div>
 			<div class="partners-detail-info partners-detail-info-second">
@@ -48,25 +39,22 @@
 				<div class="pull-left">
 					<h1>Reference</h1>
 					<h2>Bushman</h2>
-
 					<p>Bushman is a producer and retailer of clothes fit for both travel and free time. Manufacture takes place in Europe and Asia. There are over 30 Bushman shops in the Czech Republic and Slovakia. E-shop is shipping all over Europe.</p>
-
 				</div>
 			</div>
 			<div class="article-box"><div class="in-second">
 				<h1><strong>How can we help you</strong></h1>
 				<p>We do professional consultation for retailing and retail reporting. We have got our own BI tool based on Keboola tools platform, which can provide you with fast, automatic and transparent information for your decisions. Connecting diverse data sources like SKUs, offline traffic, sales KPIs and ERP data is just the beginning for us.</p>
 
-				<a href="" class="btn btn-white">Contact Us</a>
-				<a href="" class="btn btn-white">Visit Partner Website</a>
-
+				<a href="{{ path('contact') }}" class="btn btn-white">Contact Us</a>
+				<a href="http://www.ascoria.cz" class="btn btn-white" target="_blank">Visit Partner Website</a>
 
 				<ul class="box-list">
 					<li><article class="item item-blue item-second">
 						<div class="tags"><span class="tag-item">CASE STUDY</span></div>
-						<h1>Data Driven Business route one year ago ...</h1>
+						<h1>Stationary goods chain goes data ...</h1>
 						<p>With the help of Keboola partner Ascoria they have created a very retail ...</p>
-						<a href="" class="btn btn-white">Read more</a>
+						<a href="{{ path('story', {'story':'mcpen'}) }}" class="btn btn-white">Read more</a>
 					</article></li>
 <!--					<li><article class="item item-blue item-second">
 						<div class="tags"><span class="tag-item">CASE STUDY</span></div>
@@ -78,11 +66,13 @@
 						<div class="tags"><span class="tag-item">TUTORIAL</span></div>
 						<h1>Transforming data from Redshift backend to Snowflake.</h1>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu ... </p>
-						<a href="" class="btn">View</a>-->
-					</article></li>
+						<a href="" class="btn">View</a>
+					</article></li>-->
 				</ul>
 			</div></div>
-			
-			<div class="get-in-touch-btn"><a href="">Interested in similar solution? Get in touch <i></i></a></div>
+
+			{% include "events.html.twig" %}
+
+			<div class="get-in-touch-btn"><a href="{{ path('contact') }}">Interested in similar solution? Get in touch <i></i></a></div>
 		</section>
 {% endblock %}

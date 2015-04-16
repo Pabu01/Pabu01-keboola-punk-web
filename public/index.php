@@ -45,12 +45,12 @@ $app->get('/stories/{story}', function ($story) use ($app) {
 
 // use-cases
 $app->get('/use-cases', function () use ($app) {
-    return $app['twig']->render('use-cases/mcpenn.html.twig');
+    return $app['twig']->render('use-cases.html.twig');
 })->bind('use-cases');
 
-$app->get('/use-cases/{story}', function ($story) use ($app) {
-    return $app['twig']->render('use-cases/' . $story . '.html.twig');
-});
+$app->get('/use-cases/{case}', function ($case) use ($app) {
+    return $app['twig']->render('use-cases/' . $case . '.html.twig');
+})->bind('use-case');
 
 
 // contact

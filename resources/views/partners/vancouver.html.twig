@@ -1,0 +1,82 @@
+{% extends "layout.html.twig" %}
+
+{% block head %}
+		<div class="header partners-detail-header"><div class="in">
+			{% include "header.html.twig" %}
+			<article>
+				<h1 class="h1-big">Keboola Data Services (Vancouver)</h1>
+				<h2 class="h2-big"><strong>Work with Data, Make Money</strong></h2>
+				<div class="tags-list">
+					<span class="tag-item tag-item-second">#dataproducts</span>
+					<span class="tag-item tag-item-second">#datadriven</span>
+					<span class="tag-item tag-item-second">#training</span>
+				</div>
+			</article>
+		</div></div>
+{% endblock %}
+
+{% block content %}
+		<section>
+			<div class="partners-detail-head"><div class="in">
+				<ul>
+					<li class="item-first">
+						<p>Data Driven Products</p>
+						<h2>TOP EXPERTISE of partner</h2>
+					</li>
+					<li class="item-second">
+						<p>Partner and User Training</p>
+					</li>
+					{#<li class="item-third">#}
+						{#<p>Business Data Infrastructure</p>#}
+					{#</li>#}
+				</ul>
+			</div></div>
+
+			<div class="partners-detail-info">
+				<div class="pull-right partners-detail-keboola"></div>
+				<div class="pull-left">
+					<p>Keboola’s Vancouver team is experienced in wide variety of KBC applications, from internal specific BI cases over company-wide data environment to data monetization and customer-facing applications. While we work directly with selected customers, our main mission is to enable and support our growing partner network.</p>
+				</div>
+			</div>
+
+			<div class="partners-detail-info partners-detail-info-second">
+				<div class="pull-right partners-detail-csc"></div>
+				<div class="pull-left">
+					<h1>Reference</h1>
+					<h2>Christopher Marin</h2>
+					<p>CSC - Senior Principal, Digital Marketing & Analytics</p>
+					<p>“Keboola was instrumental in the success of our digital marketing analytics projects both as integration technology and as extension of our team”</p>
+				</div>
+			</div>
+
+			<div class="partners-detail-info">
+				<div class="pull-right partners-detail-coupa"></div>
+				<div class="pull-left">
+					<h1>Reference</h1>
+					<h2>Tony Darugar</h2>
+					<p>Coupa - General Manager, Coupa Expenses</p>
+					<p>“Coupa is an open platform and Keboola is a best-in-class partner that will help our customers achieve even greater visibility across their environment to make better decisions to help reduce costs.”</p>
+				</div>
+			</div>
+
+			<div class="article-box"><div class="in-second">
+				<h1><strong>How can we help you</strong></h1>
+				<p>We do professional consultation for retailing and retail reporting. We have got our own BI tool based on Keboola tools platform, which can provide you with fast, automatic and transparent information for your decisions. Connecting diverse data sources like SKUs, offline traffic, sales KPIs and ERP data is just the beginning for us.</p>
+
+				<a href="{{ path('contact') }}" class="btn btn-white">Contact Us</a>
+
+				<ul class="box-list">
+					<li><article class="item item-second">
+						<div class="tags"><span class="tag-item">WIKI</span></div>
+						<h1>Getting Started with Keboola Connection</h1>
+						<p>Adam wrote this step-by-step tutorial to walk you through the basic functionality of KBC</p>
+						<a class="btn btn-white" href="http://wiki.keboola.com/home/keboola-connection/user-space/1-getting-started">Read more</a>
+					</article></li>
+				</ul>
+			</div></div>
+
+			{% include "events.html.twig" %}
+
+			<div class="get-in-touch-btn"><a href="{{ path('contact') }}">Interested in similar solution? Get in touch <i></i></a></div>
+		</section>
+{% endblock %}

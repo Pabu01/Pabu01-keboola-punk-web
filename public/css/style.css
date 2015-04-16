@@ -665,6 +665,26 @@ header .mobile-menu {
 	background-size: cover
 }
 
+.use-cases-header {
+	width: 100%;
+	height: auto;
+	background: url(../img/partners-bg.jpg) center center no-repeat #3d86b2;
+	background-size: cover
+}
+
+.use-cases-header article {
+	padding-top: 175px;
+	height: 100%
+}
+
+.use-cases-header article h1 {
+	margin: 0 0 75px 0
+}
+
+.use-cases-header article h1:before {
+	max-width: 314px
+}
+
 .partners-header article {
 	padding-top: 175px;
 	height: 100%
@@ -695,6 +715,7 @@ header .mobile-menu {
 .partners-head-list li {
 	float: left;
 	padding: 0 25px;
+	margin-bottom: 50px;
 	width: 33.3333%
 }
 
@@ -1611,6 +1632,7 @@ section p {
 .partners-detail-info {
 	position: relative;
 	border-top: 2px solid #f0f5fb;
+	min-height: 350px;
 	*zoom: 1
 }
 
@@ -2779,4 +2801,11 @@ section p {
 
 .case-study-h1 {
 	background: url(../img/home-bg.jpg) center center no-repeat #172438;
+}
+
+ul.normal-list {
+	padding-left: 20px;
+	font-size: 16px;
+	line-height: 40px;
+	list-style-type: disc;
 }

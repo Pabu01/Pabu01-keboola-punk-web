@@ -1,0 +1,77 @@
+{% extends "layout.html.twig" %}
+
+{% block head %}
+		<div class="header partners-detail-header"><div class="in">
+			{% include "header.html.twig" %}
+			<article>
+				<h1 class="h1-big">Keboola s.r.o</h1>
+				<h2 class="h2-big"><strong>Work with Data, Make Money</strong></h2>
+				<div class="tags-list">
+					<span class="tag-item tag-item-second">#dataproducts</span>
+					<span class="tag-item tag-item-second">#datadriven</span>
+					<span class="tag-item tag-item-second">#training</span>
+				</div>
+			</article>
+		</div></div>
+{% endblock %}
+
+{% block content %}
+		<section>
+			<div class="partners-detail-head"><div class="in">
+				<ul>
+					<li class="item-first">
+						<p>Data Driven Products</p>
+						<h2>TOP EXPERTISE of partner</h2>
+					</li>
+					<li class="item-second">
+						<p>Partner and User Training</p>
+					</li>
+					{#<li class="item-third">#}
+						{#<p>Business Data Infrastructure</p>#}
+					{#</li>#}
+				</ul>
+			</div></div>
+
+			<div class="partners-detail-info">
+				<div class="pull-right partners-detail-keboola"></div>
+				<div class="pull-left">
+					<p>Keboola in Prague has lots of experience with end client deployments, enabling data driven company structure through democratised BI. While we work directly with selected customers, our main mission is to enable and support our growing partner network.</p>
+				</div>
+			</div>
+
+			<div class="partners-detail-info partners-detail-info-second">
+				<div class="pull-right partners-detail-h1"></div>
+				<div class="pull-left">
+					<h1>Reference</h1>
+					<h2>H1.cz</h2>
+					<p>Tomas Vyskočil</p>
+					<a href="{{ path('story', {'story': 'h1'}) }}" class="btn btn-white">Show More</a>
+				</div>
+			</div>
+
+			<div class="article-box"><div class="in-second">
+				<h1><strong>How can we help you</strong></h1>
+				<p>We do professional consultation for retailing and retail reporting. We have got our own BI tool based on Keboola tools platform, which can provide you with fast, automatic and transparent information for your decisions. Connecting diverse data sources like SKUs, offline traffic, sales KPIs and ERP data is just the beginning for us.</p>
+
+				<a href="{{ path('contact') }}" class="btn btn-white">Contact Us</a>
+
+				<ul class="box-list">
+					<li><article class="item item-second">
+						<div class="tags"><span class="tag-item">WIKI</span></div>
+						<h1>Prevent reports with metric level TOP() filters from breaking when adding another metric</h1>
+						<a class="btn btn-white" href="https://sites.google.com/a/keboola.com/wiki/home/keboola-connection/user-space/gooddata/pure-gooddata-hints/prevent-reports-with-metric-level-top-filters-from-breaking-when-adding-another-metric">Read more</a>
+					</article></li>
+					<li><article class="item item-yellow item-second">
+						<div class="tags"><span class="tag-item">CASE STUDY</span></div>
+						<h1>KPIs and client reporting at digital agency - H1.cz</h1>
+						<p>H1.cz has improved operations and budgeting</p>
+						<a href="{{ path('story', {'story': 'h1'}) }}" class="btn">View</a>
+					</article></li>
+				</ul>
+			</div></div>
+
+			{% include "events.html.twig" %}
+
+			<div class="get-in-touch-btn"><a href="{{ path('contact') }}">Interested in similar solution? Get in touch <i></i></a></div>
+		</section>
+{% endblock %}

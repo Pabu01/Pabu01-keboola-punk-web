@@ -9,8 +9,9 @@
 				</strong></h2>
 				<div class="tags-list">
 					<span class="tag-item tag-item-second">#datamanagement</span>
-					<span class="tag-item tag-item-second">#datamanagement</span>
+					<span class="tag-item tag-item-second">#pharma</span>
 					<span class="tag-item tag-item-second">#productdevelopment</span>
+					<span class="tag-item tag-item-second">#strategicinsight</span>
 				</div>
 			</article>
 		</div></div>
@@ -29,8 +30,8 @@
 						<h2>Daily volume<br>of data</h2>
 					</li>-->
 					<li class="item-first">
-						<p>Logistics & horsesense</p>
-						<h2>TOP EXPERTISE<br>of partner</h2>
+						<p>Metrics drive</p>
+						<h2>TOP EXPERTISE of partner</h2>
 					</li>
 				</ul>
 			</div></div>
@@ -43,7 +44,7 @@
 
 				</div>
 			</div>
-			
+
 			<div class="partners-detail-info partners-detail-info-second">
 				<div class="pull-right partners-detail-mmis"></div>
 				<div class="pull-left">
@@ -52,27 +53,31 @@
 					<p>Michaeline Daboul - President</p>
 				</div>
 			</div>
-			
+
 			<div class="partners-detail-info">
 				<div class="pull-right partners-detail-efa"></div>
 				<div class="pull-left">
 					<h1>Reference</h1>
 						<h2>Endometriosis Foundation of America</h2>
 						<p>Theresa Davidson - Managing Director</p>
-			
+
 				</div>
 			</div>
-			
+
 			<div class="article-box"><div class="in-second">
 				<h1><strong>How can we help you</strong></h1>
-				<p>As a group of people who once worked for big consulting firms, we know that the super-sized companies' approach to your startup's growth can seem rigid and mass produced. We know the full range of your growing startup's needs and have the flexibility to provide solutions that can fit any budget. We help your startup get investor-ready and then we stick around to accelerate growth by providing the tools to make proactive, data-driven decisions. 
+				<p>As a group of people who once worked for big consulting firms, we know that the super-sized companies' approach to your startup's growth can seem rigid and mass produced. We know the full range of your growing startup's needs and have the flexibility to provide solutions that can fit any budget. We help your startup get investor-ready and then we stick around to accelerate growth by providing the tools to make proactive, data-driven decisions.
 				</p>
 
-				<a href="" class="btn btn-white">Contact Us</a>
+				<a href="{{ path('contact') }}" class="btn btn-white">Contact Us</a>
 				<a href="" class="btn btn-white">Visit Partner Website</a>
 
 
 				<ul class="box-list">
+					<li><article class="item item-second disabled">
+							<div class="tags"><span class="tag-item">WIKI</span></div>
+							<h1>This partner has not shared anything yet ...</h1>
+						</article></li>
 <!--					<li><article class="item item-second">
 						<div class="tags"><span class="tag-item">WIKI</span></div>
 						<h1>Rapid deployment of the industry’s most advanced analytics ...</h1>
@@ -91,18 +96,12 @@
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu ... </p>
 						<a href="" class="btn">View</a>
 					</article></li>
+-->
 				</ul>
 			</div></div>
-			<article class="webinar-info-box"><div class="in">
-				<div class="desc">
-					<h2>Our webinar</h2>
-					<h1>Logistics and data</h1>
-				</div>
-				<div class="action">
-					<div class="date">29.12.2014 <span class="hr">/</span> Keboola HQ</div>
-					<a href="" class="btn btn-white">Sign Up</a>
-				</div>-->
-			</div></article>
-			<div class="get-in-touch-btn"><a href="">Interested in similar solution? Get in touch <i></i></a></div>
+
+			{% include "events.html.twig" %}
+
+			<div class="get-in-touch-btn"><a href="{{ path('contact') }}">Interested in similar solution? Get in touch <i></i></a></div>
 		</section>
 {% endblock %}
