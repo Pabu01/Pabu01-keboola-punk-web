@@ -1679,6 +1679,18 @@ section p {
 	background: url(../img/partners-detail-rohlik.png) center center no-repeat #ffc14c
 }
 
+.partners-detail-makespace {
+	background: url(../img/partners-detail-makespace.png) center center no-repeat #ffffff
+}
+
+.partners-detail-mmis {
+	background: url(../img/partners-detail-mmis.png) center center no-repeat #00b86e
+}
+
+.partners-detail-efa {
+	background: url(../img/partners-detail-efa.png) center center no-repeat #ffffff
+}
+
 .partners-detail-mcpen {
 	background: url(../img/partners-detail-mcpen.png) center center no-repeat #ffffff
 }
@@ -2764,4 +2776,3 @@ section p {
 .article .article-img-full img {
 	max-width: 100%
 }
-
