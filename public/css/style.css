@@ -1149,12 +1149,12 @@ section p {
 	background-image: url(../img/sap-logo-act.png)
 }
 
-.customer-logo-list .anyplan-item:after {
-	background-image: url(../img/anyplan-logo.png)
+.customer-logo-list .tableau-item:after {
+	background-image: url(../img/tableau-logo.png)
 }
 
-.customer-logo-list .anyplan-item i {
-	background-image: url(../img/anyplan-logo-act.png)
+.customer-logo-list .tableau-item i {
+	background-image: url(../img/tableau-logo-act.png)
 }
 
 .customer-logo-list .salesforce-item:after {
@@ -1165,12 +1165,12 @@ section p {
 	background-image: url(../img/salesforce-logo-act.png)
 }
 
-.customer-logo-list .wiseio-item:after {
-	background-image: url(../img/wiseio-logo.png)
+.customer-logo-list .google-item:after {
+	background-image: url(../img/google-logo.png)
 }
 
-.customer-logo-list .wiseio-item i {
-	background-image: url(../img/wiseio-logo-act.png)
+.customer-logo-list .google-item i {
+	background-image: url(../img/google-logo-act.png)
 }
 
 .box-list {
