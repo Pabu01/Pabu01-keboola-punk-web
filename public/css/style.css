@@ -1200,6 +1200,14 @@ section p {
 	background-image: url(../img/sap-logo-act.png)
 }
 
+.customer-logo-list .gooddata-item:after {
+	background-image: url(../img/gooddata-logo.png)
+}
+
+.customer-logo-list .gooddata-item i {
+	background-image: url(../img/sap-gooddata-act.png)
+}
+
 .customer-logo-list .tableau-item:after {
 	background-image: url(../img/tableau-logo.png)
 }
