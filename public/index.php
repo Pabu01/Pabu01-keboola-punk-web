@@ -44,13 +44,13 @@ $app->get('/stories/{story}', function ($story) use ($app) {
 
 
 // use-cases
-$app->get('/use-cases', function () use ($app) {
-    return $app['twig']->render('use-cases.html.twig');
-})->bind('use-cases');
+$app->get('/solutions', function () use ($app) {
+    return $app['twig']->render('solutions.html.twig');
+})->bind('solutions');
 
-$app->get('/use-cases/{case}', function ($case) use ($app) {
-    return $app['twig']->render('use-cases/' . $case . '.html.twig');
-})->bind('use-case');
+$app->get('/solutions/{case}', function ($case) use ($app) {
+    return $app['twig']->render('solutions/' . $case . '.html.twig');
+})->bind('solution');
 
 
 // contact

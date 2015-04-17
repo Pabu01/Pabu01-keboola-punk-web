@@ -2805,7 +2805,54 @@ section p {
 
 ul.normal-list {
 	padding-left: 20px;
-	font-size: 16px;
-	line-height: 40px;
 	list-style-type: disc;
+}
+
+ul.normal-list li {
+	font-size: 1.6rem;
+	line-height: 40px;
+	margin-left: 10px;
+	padding-left: 10px;
+	font-weight: 400;
+}
+
+.article blockquote {
+	border-top: 2px solid #f0f5fb;
+	text-align: center;
+	font-style: italic;
+	padding: 50px;
+}
+
+.article blockquote footer {
+	font-size: 1.6rem;
+	font-style: normal;
+	line-height: 40px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.article blockquote:before {
+	content: open-quote;
+	font-size: 10rem;
+	left: 0;
+	position: absolute;
+	line-height: 0;
+	top: 0;
+	color: #f0f5fb;
+}
+
+.article blockquote:after {
+	content: close-quote;
+	font-size: 10rem;
+	right: 0;
+	position: absolute;
+	line-height: 0;
+	bottom: 0;
+	color: #f0f5fb;
+}
+
+.article-box-solution .info-article-box > div:only-child {
+	display: block;
 }
