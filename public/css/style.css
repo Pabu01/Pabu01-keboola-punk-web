@@ -650,6 +650,13 @@ header .mobile-menu {
 	background-size: cover
 }
 
+.case-study-mcpen {
+	width: 100%;
+	height: 820px;
+	background: url(../img/case-study-back-mcpen.jpg) center center no-repeat #172438;
+	background-size: cover
+}
+
 .case-study-header article {
 	height: 100%
 }
@@ -667,8 +674,8 @@ header .mobile-menu {
 
 .use-cases-header {
 	width: 100%;
-	height: auto;
-	background: url(../img/partners-bg.jpg) center center no-repeat #3d86b2;
+	height: 740px;
+	background: url(../img/solutions-bg.jpg) center center no-repeat #3d86b2;
 	background-size: cover
 }
 
@@ -760,6 +767,43 @@ header .mobile-menu {
 	background-image: url(../img/partners-head-ico-third.png)
 }
 
+.ico-clevel {
+	background-image: url(../img/ico-clevel.png)
+}
+
+.ico-marketing {
+	background-image: url(../img/ico-marketing.png)
+}
+
+.ico-finance {
+	background-image: url(../img/ico-finance.png)
+}
+
+.ico-sales {
+	background-image: url(../img/ico-sales.png)
+}
+
+.ico-business {
+	background-image: url(../img/ico-business.png)
+}
+
+.ico-logistics {
+	background-image: url(../img/ico-logistics.png)
+}
+
+.ico-saas {
+	background-image: url(../img/ico-saas.png)
+}
+
+.ico-agency {
+	background-image: url(../img/ico-agency.png)
+}
+
+.ico-customercare {
+	background-image: url(../img/ico-customercare.png)
+}
+
+
 .partners-detail-header {
 	width: 100%;
 	height: 410px;
@@ -776,6 +820,13 @@ header .mobile-menu {
 	width: 100%;
 	height: 410px;
 	background: url(../img/contact-bg.jpg) center center no-repeat #172438;
+	background-size: cover
+}
+
+.solution-header {
+	width: 100%;
+	height: 740px;
+	background: url(../img/solution-bg.jpg) center center no-repeat #172438;
 	background-size: cover
 }
 
@@ -1292,6 +1343,10 @@ section p {
 	background-image: url(../img/ico-season-sale-bg.png)
 }
 
+.box-list .ico-kmeans {
+	background-image: url(../img/ico-kmeans-bg.png)
+}
+
 .box-list h1 {
 	margin: 0;
 	font-size: 26px;
@@ -1598,7 +1653,7 @@ section p {
 
 .partners-detail-head .item-first {
 	padding-right: 60px;
-	border-right: 2px solid #f0f5fb
+	border-right: 0px solid #f0f5fb
 }
 
 .partners-detail-head .item-second {
@@ -1700,6 +1755,14 @@ section p {
 
 .partners-detail-rohlik {
 	background: url(../img/partners-detail-rohlik.png) center center no-repeat #ffc14c
+}
+
+.partners-detail-slevomat {
+	background: url(../img/partners-detail-slevomat.png) center center no-repeat #33ccff
+}
+
+.partners-detail-logio {
+	background: url(../img/partners-detail-logio.png) center center no-repeat #156129
 }
 
 .partners-detail-makespace {
