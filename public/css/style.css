@@ -915,7 +915,8 @@ section p {
 }
 
 .article .article-img-left img, .article .article-img-right img {
-	vertical-align: middle
+	vertical-align: middle;
+	max-width: 100%;
 }
 
 .article .article-img-right {
@@ -2817,7 +2818,6 @@ ul.normal-list li {
 }
 
 .article blockquote {
-	border-top: 2px solid #f0f5fb;
 	text-align: center;
 	font-style: italic;
 	padding: 50px;
@@ -2855,4 +2855,37 @@ ul.normal-list li {
 
 .article-box-solution .info-article-box > div:only-child {
 	display: block;
+}
+
+.article-divider {
+	border-top: 2px solid #f0f5fb;
+	padding-top: 80px;
+}
+
+.article-divider h1 {
+	color: #00a8ff;
+}
+
+.display-table {
+	display: table;
+	min-height: 230px;
+}
+
+.display-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.partners-head-list.solutions i {
+	float: left;
+	width: 62px;
+}
+
+.partners-head-list.solutions a {
+	display: block;
+}
+
+.partners-head-list.solutions a h2 {
+	margin: 0;
+	padding: 12px;
 }
