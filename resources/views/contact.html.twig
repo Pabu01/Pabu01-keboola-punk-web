@@ -53,19 +53,22 @@
 				</article>
 				<div class="pull-right">
 					<div class="contact-form">
-						<h2>If you are interested in our products or just want to ask something, pleasefill out the contact form below.</h2>
+						<form id="contactForm" action="/contact" method="post">
+							<h2>If you are interested in our products or just want to ask something, pleasefill out the contact form below.</h2>
 
+							<input id="crumbField" type="hidden" name="crumb" value="1">
 
-						<label for="item-name" class="item-input"><span>Name</span><input type="text" name="item-name" id="item-name"></label>
-						<label for="item-email" class="item-input"><span>Email</span><input type="text" name="item-email" id="item-email"></label>
-						<label for="item-phone" class="item-input"><span>Phone number</span><input type="text" name="item-phone" id="item-phone"></label>
-						<label for="item-message" class="item-textarea"><span>Leave us a message</span><textarea name="item-message" id="item-message" cols="30" rows="10"></textarea></label>
-						<p>I would like to: </p>
-						<label for="" class="item-checkbox"><input type="checkbox" name="checkbox" id="checkbox-1"> See a demo</label>
-						<label for="" class="item-checkbox"><input type="checkbox" name="checkbox" id="checkbox-2"> Be invited to the next webinar</label>
-						<label for="" class="item-checkbox"><input type="checkbox" name="checkbox" id="checkbox-3"> Start a trial with my data right away</label>
-						<label for="" class="item-checkbox"><input type="checkbox" name="checkbox" id="checkbox-4"> Get a cup of great coffee</label>
-						<button type="submit" class="btn btn-white">Send</button>
+							<label for="item-name" class="item-input"><span>Name</span><input type="text" name="item-name" id="item-name"></label>
+							<label for="item-email" class="item-input"><span>Email</span><input type="text" name="item-email" id="item-email"></label>
+							<label for="item-phone" class="item-input"><span>Phone number</span><input type="text" name="item-phone" id="item-phone"></label>
+							<label for="item-message" class="item-textarea"><span>Leave us a message</span><textarea name="item-message" id="item-message" cols="30" rows="10"></textarea></label>
+							<p>I would like to: </p>
+							<label for="demo" class="item-checkbox"><input type="checkbox" name="demo" id="checkbox-1"> See a demo</label>
+							<label for="webinar" class="item-checkbox"><input type="checkbox" name="webinar" id="checkbox-2"> Be invited to the next webinar</label>
+							<label for="trial" class="item-checkbox"><input type="checkbox" name="trial" id="checkbox-3"> Start a trial with my data right away</label>
+							<label for="coffee" class="item-checkbox"><input type="checkbox" name="coffee" id="checkbox-4"> Get a cup of great coffee</label>
+							<button type="submit" class="btn btn-white">Send</button>
+						</form>
 					</div>
 				</div>
 			</div></div>

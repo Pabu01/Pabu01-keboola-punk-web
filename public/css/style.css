@@ -1872,7 +1872,7 @@ section p {
 	display: block;
 	margin: 0 0 10px 0;
 	width: 100%;
-	height: 50px
+	/*height: 50px*/
 }
 
 .contact-content .contact-form .item-input.act span, .contact-content .contact-form .item-textarea.act span {
@@ -2959,4 +2959,21 @@ ul.normal-list li {
 .partners-head-list.solutions a h2 {
 	margin: 0;
 	padding: 12px;
+}
+
+lable.error {
+	color: red;
+	padding: 10px;
+	display: block;
+}
+
+.alert {
+	padding: 15px;
+	border: 1px solid transparent;
+}
+
+.alert-info {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
 }

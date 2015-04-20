@@ -2,6 +2,7 @@
   "require": {
     "silex/silex": "~1.2",
     "twig/twig": "~1.18",
-    "symfony/twig-bridge": "~2.6"
+    "symfony/twig-bridge": "~2.6",
+    "swiftmailer/swiftmailer": "~5.4"
   }
 }

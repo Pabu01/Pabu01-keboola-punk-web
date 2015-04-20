@@ -9,15 +9,15 @@
  */
 
  (function(window, document, undefined) {
-    
+
     // Defaults
     // =====================================
-   
+
     var r4 = window.r4 = {
         utils : {},
         cache : {}
     };
-  
+
 
     // Methods
     // =====================================
@@ -40,7 +40,7 @@
             [0, 1000, function() {
                 mobile = true;
             }]
-        ],
+        ];
         r4.lastBound = -1;
 
     };
@@ -82,11 +82,11 @@
             $('.box-list > li > article, .partners-list > li > article').css('height', 'auto');
         };
 
-        
+
         r4.cache.window.smartresize(function(){
             w = r4.cache.window.width();
             match();
-            
+
             if (w <= 700) {
                 unmatch();
             }
@@ -110,7 +110,7 @@
             var el = $(this);
 
             el.find('input, textarea').on('focus', function(e){
-                
+
                 el.addClass('act');
             });
         });
@@ -158,3 +158,23 @@
     jQuery.fn[sr] = function(fn){ return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
+
+$(function() {
+	$("#contactForm").validate({
+		rules: {
+			"item-name": "required",
+			"item-email": {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			"item-name": "Please enter your name",
+			"item-email": "Please enter a valid email address"
+		}
+	});
+
+	$("#item-name").focus(function() {
+		$("#crumbField").val(2);
+	});
+});
