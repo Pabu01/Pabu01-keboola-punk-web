@@ -674,7 +674,7 @@ header .mobile-menu {
 
 .use-cases-header {
 	width: 100%;
-	height: 740px;
+	max-height: 740px;
 	background: url(../img/solutions-bg.jpg) center center no-repeat #3d86b2;
 	background-size: cover
 }
