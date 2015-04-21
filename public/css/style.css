@@ -182,7 +182,7 @@ html, body {
 body {
 	margin: 0;
 	font-size: 12px;
-	font-size: 1.2 pxrem;
+	font-size: 1.2rem;
 	line-height: 1;
 	font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Arial CE', Arial, sans-serif;
 	color: #647082;
@@ -1016,7 +1016,7 @@ section p {
 	margin: 0 0 30px 0;
 	font-size: 38px;
 	font-size: 3.8rem;
-	line-height: 1.2 me;
+	line-height: 1.2em;
 	font-weight: 300;
 	color: #00a8ff
 }
@@ -2449,7 +2449,7 @@ section p {
 		position: relative;
 		float: none;
 		padding: 80px 0 0 0;
-		min-height: none;
+		min-height: auto;
 		text-align: center
 	}
 
@@ -2590,7 +2590,7 @@ section p {
 		border-radius: 4px;
 		font-size: 15px;
 		font-size: 1.5rem;
-		line-height: 36px;§
+		line-height: 36px;
 		font-weight: 500;
 		color: #fff;
 		opacity: .7;
@@ -2989,7 +2989,7 @@ lable.error {
 	left: 0;
 	width: 100%;
 	border: 2px solid #fff;
-	border-top: 1px solid #ddd;
+	border-top: 1px #ddd;
 	border-radius: 0 0 4px 4px;
 	-webkit-border-radius: 0 0 4px 4px;
 	-moz-border-radius: 0 0 4px 4px;
