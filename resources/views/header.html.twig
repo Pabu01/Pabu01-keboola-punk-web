@@ -1,15 +1,20 @@
 <header>
 	<h1><a href="{{ path('homepage') }}">Keboola</a></h1>
 	<div class="mobile-menu">
-		<a href="" class="login-btn">LOGIN</a>
+		<a href="{{ path('contact') }}" class="login-btn">CONTACT</a>
 		<a href="" class="mobile-btn"></a>
+		<div class="mobile-nav">
+			<ul>
+				<li><a href="{{ path('stories') }}">SUCCESS STORIES</a></li>
+				<li><a href="{{ path('solutions') }}">SOLUTIONS</a></li>
+				<li><a href="{{ path('partners') }}">PARTNERS</a></li>
+			</ul>
+		</div>
 	</div>
 	<nav><ul>
 			<li><a href="{{ path('stories') }}">SUCCESS STORIES</a></li>
-			{#<li><a href="">PARTNERS</a></li>#}
 			<li class="item-remove-second"><a href="{{ path('solutions') }}">SOLUTIONS</a></li>
 			<li class="item-remove-first"><a href="{{ path('partners') }}">PARTNERS</a></li>
-			{#<li class="about-item"><a href="">ABOUT</a></li>#}
 
 			{#<li class="pull-right login-item"><a href="">LOGIN</a></li>#}
 			<li class="pull-right login-item"><a href="{{ path('contact') }}">CONTACT</a></li>

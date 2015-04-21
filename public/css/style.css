@@ -2577,6 +2577,10 @@ section p {
 		vertical-align: top
 	}
 
+	header .mobile-btn:hover, header .mobile-btn:active {
+		background-color: #ddd;
+	}
+
 	header .login-btn {
 		display: inline-block;
 		padding: 0 12px;
@@ -2586,7 +2590,7 @@ section p {
 		border-radius: 4px;
 		font-size: 15px;
 		font-size: 1.5rem;
-		line-height: 36px;
+		line-height: 36px;§
 		font-weight: 500;
 		color: #fff;
 		opacity: .7;
@@ -2976,4 +2980,52 @@ lable.error {
 	color: #31708f;
 	background-color: #d9edf7;
 	border-color: #bce8f1;
+}
+
+.mobile-nav {
+	background-color: #fff;
+	padding: 15px 30px 10px 30px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	border: 2px solid #fff;
+	border-top: 1px solid #ddd;
+	border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	line-height: 36px;
+	font-weight: 500;
+	color: rgb(100, 112, 130);
+	margin-top: 12px;
+	opacity: .99;
+}
+
+.mobile-nav ul {
+	float: none;
+	height: auto;
+}
+
+.mobile-nav li {
+	float: none;
+	margin: 0;
+}
+
+.mobile-nav li a {
+	color: rgb(100, 112, 130);
+}
+
+.mobile-nav {
+	display: none;
+}
+
+.login-btn:hover {
+	opacity: 1;
+}
+
+.btn:hover, .btn-big:hover {
+	border-color: #fff;
+}
+
+.btn.btn-white:hover {
+	border-color: #00a8fe;
 }

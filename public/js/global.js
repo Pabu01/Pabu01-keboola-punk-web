@@ -160,6 +160,8 @@
 })(jQuery,'smartresize');
 
 $(function() {
+
+	// contact form
 	$("#contactForm").validate({
 		rules: {
 			"item-name": "required",
@@ -176,5 +178,11 @@ $(function() {
 
 	$("#item-name").focus(function() {
 		$("#crumbField").val(2);
+	});
+
+	// mobile menu
+	$('.mobile-btn').click(function() {
+		$('.mobile-nav').toggle();
+		return false;
 	});
 });
