@@ -75,7 +75,7 @@ $app->post('/contact', function () use ($app) {
         $message = \Swift_Message::newInstance()
             ->setSubject('Keboola Contact Form')
             ->setFrom([$request->get('item-email')])
-            ->setTo(['miro@keboola.com'])
+            ->setTo(['info@keboola.com'])
             ->setBody($body);
 
         $app['mailer']->send($message);
