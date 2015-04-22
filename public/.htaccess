@@ -8,6 +8,9 @@
     ExpiresByType image/jpg "access plus 1 month"
     ExpiresByType image/jpeg "access plus 1 month"
 
+    # Css
+    ExpiresByType text/css "access plus 1 minute"
+
     <IfModule mod_headers.c>
         Header append Cache-Control "public"
     </IfModule>
