@@ -1,3 +1,8 @@
+RewriteEngine On
+#RewriteBase /path/to/app
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
 <IfModule mod_expires.c>
     # Enable expirations
     ExpiresActive On
@@ -7,9 +12,6 @@
     ExpiresByType image/png "access plus 1 month"
     ExpiresByType image/jpg "access plus 1 month"
     ExpiresByType image/jpeg "access plus 1 month"
-
-    # Css
-    ExpiresByType text/css "access plus 1 minute"
 
     <IfModule mod_headers.c>
         Header append Cache-Control "public"
@@ -47,4 +49,4 @@
   Header append Vary User-Agent
 </IfModule>
 
-FallbackResource /index.php
+#FallbackResource /index.php
