@@ -823,13 +823,6 @@ header .mobile-menu {
 	background-size: cover
 }
 
-.solution-header {
-	width: 100%;
-	height: 740px;
-	background: url(../img/solution-bg.jpg) center center no-repeat #172438;
-	background-size: cover
-}
-
 .contact-header article {
 	padding-top: 150px;
 	height: 100%
@@ -1196,40 +1189,20 @@ section p {
 	background-image: url(../img/sap-logo.png)
 }
 
-.customer-logo-list .sap-item i {
-	background-image: url(../img/sap-logo-act.png)
-}
-
 .customer-logo-list .gooddata-item:after {
 	background-image: url(../img/gooddata-logo.png)
-}
-
-.customer-logo-list .gooddata-item i {
-	background-image: url(../img/sap-gooddata-act.png)
 }
 
 .customer-logo-list .tableau-item:after {
 	background-image: url(../img/tableau-logo.png)
 }
 
-.customer-logo-list .tableau-item i {
-	background-image: url(../img/tableau-logo-act.png)
-}
-
 .customer-logo-list .salesforce-item:after {
 	background-image: url(../img/salesforce-logo.png)
 }
 
-.customer-logo-list .salesforce-item i {
-	background-image: url(../img/salesforce-logo-act.png)
-}
-
 .customer-logo-list .google-item:after {
 	background-image: url(../img/google-logo.png)
-}
-
-.customer-logo-list .google-item i {
-	background-image: url(../img/google-logo-act.png)
 }
 
 .box-list {
@@ -2449,7 +2422,6 @@ section p {
 		position: relative;
 		float: none;
 		padding: 80px 0 0 0;
-		min-height: auto;
 		text-align: center
 	}
 
