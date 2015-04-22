@@ -54,6 +54,11 @@ $app->get('/solutions/{case}', function ($case) use ($app) {
     return $app['twig']->render('solutions/' . $case . '.html.twig');
 })->bind('solution');
 
+// jobs
+$app->get('/jobs', function () use ($app) {
+    return $app['twig']->render('jobs.html.twig');
+})->bind('jobs');
+
 
 // contact
 $app->get('/contact', function () use ($app) {

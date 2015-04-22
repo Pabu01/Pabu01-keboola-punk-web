@@ -679,6 +679,13 @@ header .mobile-menu {
 	background-size: cover
 }
 
+.jobs-header {
+	width: 100%;
+	max-height: 740px;
+	background: url(../img/solutions-bg.jpg) center center no-repeat #3d86b2;
+	background-size: cover
+}
+
 .use-cases-header article {
 	padding-top: 175px;
 	height: 100%
