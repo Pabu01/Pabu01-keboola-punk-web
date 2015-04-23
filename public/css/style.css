@@ -974,7 +974,8 @@ section p {
 	left: auto;
 	right: -40px;
 	width: 50%;
-	text-align: center
+	text-align: center;
+	overflow: hidden;
 }
 
 .article-box {
@@ -3007,4 +3008,8 @@ lable.error {
 
 .btn.btn-white:hover {
 	border-color: #00a8fe;
+}
+
+.article.item-second {
+	padding-top: 0;
 }

@@ -1,0 +1,97 @@
+{% extends "layout.html.twig" %}
+
+{% block head %}
+	<div class="header partners-detail-header"><div class="in">
+			{% include "header.html.twig" %}
+			<article>
+				<h1 class="h1-big">Data Analyst</h1>
+				<h2 class="h2-big"><strong>Keboola Prague</strong></h2>
+				<div class="tags-list">
+					<span class="tag-item tag-item-second">#Datageek</span>
+					<span class="tag-item tag-item-second">#CommonSense</span>
+				</div>
+			</article>
+		</div></div>
+{% endblock %}
+
+{% block content %}
+	<section>
+
+		<article class="article">
+			<div class="in">
+				<div class="article-img-right">
+					<a href="/img/jobs/keboola-1.jpg" data-lightbox="life-in-keboola" data-title="Life in Keboola">
+						<img src="/img/jobs/keboola-1.jpg" alt="Life in Keboola">
+					</a>
+				</div>
+				<div class="desc">
+					<h1>We want you! Or not...</h1>
+					<p>We are always open to hear from people and companies who wish to explore opportunities working with us. Our emphasis is on data and business analytics and related backend development, but do let us know if you believe you have a skill that would fit with what we do!</p>
+				</div>
+			</div>
+		</article>
+
+		<article class="article">
+			<div class="in">
+				<div class="article-img-right">
+					<a href="/img/jobs/keboola-4.png" data-lightbox="life-in-keboola" data-title="Life in Keboola">
+						<img src="/img/jobs/keboola-4.png" alt="Life in Keboola">
+					</a>
+				</div>
+				<div class="desc">
+					<p><strong>We are looking for people who:</strong></p>
+
+					<ul class="normal-list">
+						<li>know how to use their brain and master the art of common sense</li>
+						<li>are excited to learn new things</li>
+						<li>are out-of-the-box thinkers</li>
+						<li>speak english fluently and confidently enough to hold on-line meetings with 4 people from the USA or elsewhere</li>
+						<li>don’t mind to work odd hours required by clientele from timezones around the world</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+
+		<article class="article">
+			<div class="in">
+				<div class="article-img-right">
+					<a href="/img/jobs/keboola-3.png" data-lightbox="life-in-keboola" data-title="Life in Keboola">
+						<img src="/img/jobs/keboola-3.png" alt="Life in Keboola">
+					</a>
+				</div>
+				<div class="desc">
+					<p><strong>We offer:</strong></p>
+					<ul class="normal-list">
+						<li>work with cutting edge technologies (GoodData, Hadoop, BigQuery, Licensed Twitter Firehose, R, ElasticSearch, ...)</li>
+						<li>the experience of working completely in the cloud</li>
+						<li>hub office surrounded by others on the same wavelength</li>
+						<li>Keboola Space Program</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+
+		<article class="article">
+			<div class="in">
+				<div class="article-img-right">
+					<a href="/img/jobs/keboola-2.jpg" data-lightbox="life-in-keboola" data-title="Life in Keboola">
+						<img src="/img/jobs/keboola-2.jpg" alt="Life in Keboola">
+					</a>
+				</div>
+				<div class="desc">
+					<p><strong>We ignore:</strong></p>
+					<ul class="normal-list">
+						<li>formal education on any level, including MBAs</li>
+						<li>business cards</li>
+						<li>formal hierarchy</li>
+						<li>salary histories</li>
+					</ul>
+					<br><br><br><br><br>
+					<br><br><br><br><br>
+				</div>
+			</div>
+		</article>
+
+		<div class="get-in-touch-btn"><a href="{{ path('contact') }}">Interested? Get in touch <i></i></a></div>
+	</section>
+{% endblock %}

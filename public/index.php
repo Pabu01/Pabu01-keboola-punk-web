@@ -59,6 +59,10 @@ $app->get('/jobs', function () use ($app) {
     return $app['twig']->render('jobs.html.twig');
 })->bind('jobs');
 
+$app->get('/jobs/{job}', function ($job) use ($app) {
+    return $app['twig']->render('jobs/' . $job . '.html.twig');
+})->bind('job');
+
 
 // contact
 $app->get('/contact', function () use ($app) {
