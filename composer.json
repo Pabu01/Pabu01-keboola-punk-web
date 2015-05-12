@@ -3,6 +3,7 @@
     "silex/silex": "~1.2",
     "twig/twig": "~1.18",
     "symfony/twig-bridge": "~2.6",
-    "swiftmailer/swiftmailer": "~5.4"
+    "swiftmailer/swiftmailer": "~5.4",
+    "kilte/silex-captcha": "~1.0"
   }
 }

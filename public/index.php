@@ -1,6 +1,6 @@
 <?php
 
-use Symfony\Component\HttpFoundation\Request;
+use Kilte\Silex\Captcha\CaptchaServiceProvider;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
@@ -14,10 +14,10 @@ $app = new Silex\Application();
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 $app->register(new Silex\Provider\SwiftmailerServiceProvider());
 $app->register(new Silex\Provider\SessionServiceProvider());
+$app->register(new CaptchaServiceProvider());
 $app->register(new Silex\Provider\TwigServiceProvider(), [
     'twig.path' => __DIR__ . '/../resources/views',
 ]);
-
 
 // index
 $app->get('/', function () use ($app) {
@@ -66,7 +66,14 @@ $app->get('/jobs/{job}', function ($job) use ($app) {
 
 // contact
 $app->get('/contact', function () use ($app) {
-    return $app['twig']->render('contact.html.twig');
+
+    /** @var \Gregwar\Captcha\CaptchaBuilder $captchaBuilder */
+    $captchaBuilder = $app['captcha.builder'];
+    $captchaBuilder->build();
+
+    return $app['twig']->render('contact.html.twig', [
+        'captcha' => $captchaBuilder
+    ]);
 })->bind('contact');
 $app->post('/contact', function () use ($app) {
     $request = $app['request'];
