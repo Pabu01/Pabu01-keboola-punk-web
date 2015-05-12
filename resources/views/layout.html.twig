@@ -29,6 +29,14 @@
 		<div class="alert alert-info"><strong>{{ item }}</strong></div>
 	{% endfor %}
 
+	{% for item in app.session.flashbag.get('success') %}
+		<div class="alert alert-success"><strong>{{ item }}</strong></div>
+	{% endfor %}
+
+	{% for item in app.session.flashbag.get('error') %}
+		<div class="alert alert-danger"><strong>{{ item }}</strong></div>
+	{% endfor %}
+
 	{% block head %}
 	{% endblock %}
 

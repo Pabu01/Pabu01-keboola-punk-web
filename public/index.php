@@ -14,10 +14,10 @@ $app = new Silex\Application();
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 $app->register(new Silex\Provider\SwiftmailerServiceProvider());
 $app->register(new Silex\Provider\SessionServiceProvider());
-$app->register(new CaptchaServiceProvider());
 $app->register(new Silex\Provider\TwigServiceProvider(), [
     'twig.path' => __DIR__ . '/../resources/views',
 ]);
+$app->register(new CaptchaServiceProvider());
 
 // index
 $app->get('/', function () use ($app) {
@@ -69,16 +69,21 @@ $app->get('/contact', function () use ($app) {
 
     /** @var \Gregwar\Captcha\CaptchaBuilder $captchaBuilder */
     $captchaBuilder = $app['captcha.builder'];
+    $captchaBuilder->setMaxFrontLines(2);
+    $captchaBuilder->setMaxBehindLines(3);
     $captchaBuilder->build();
+
+    $app['session']->set('phrase', $captchaBuilder->getPhrase());
 
     return $app['twig']->render('contact.html.twig', [
         'captcha' => $captchaBuilder
     ]);
 })->bind('contact');
+
 $app->post('/contact', function () use ($app) {
     $request = $app['request'];
 
-    if ($request->get('crumb') == 2) {
+    if ($app['session']->get('phrase') == $request->get('item-captcha')) {
         $body = "Name: " . $request->get('item-name') . PHP_EOL
             . "Email: " . $request->get('item-email') . PHP_EOL
             . "Phone: " . $request->get('item-phone') . PHP_EOL
@@ -96,10 +101,12 @@ $app->post('/contact', function () use ($app) {
 
         $app['mailer']->send($message);
 
-        $app['session']->getFlashBag()->add('info', "Thank you for contacting us! We'll get back to you soon.");
+        $app['session']->getFlashBag()->add('success', "Thank you for contacting us! We'll get back to you soon.");
+    } else {
+        $app['session']->getFlashBag()->add('error', "Image code didn't match, plesae try again.");
     }
 
-    return $app['twig']->render('contact.html.twig');
+    return $app->redirect('/contact');
 });
 
 

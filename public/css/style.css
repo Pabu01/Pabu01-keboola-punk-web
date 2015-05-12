@@ -2046,9 +2046,9 @@ ul.normal-list li {
 	padding: 12px;
 }
 
-lable.error {
+label.error {
 	color: red;
-	padding: 10px;
+	padding: 0 10px;
 	display: block;
 }
 
@@ -2061,6 +2061,18 @@ lable.error {
 	color: #31708f;
 	background-color: #d9edf7;
 	border-color: #bce8f1;
+}
+
+.alert-success {
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+}
+
+.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
 }
 
 .mobile-nav {

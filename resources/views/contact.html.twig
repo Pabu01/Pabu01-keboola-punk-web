@@ -68,7 +68,12 @@
 							<label for="trial" class="item-checkbox"><input type="checkbox" name="trial" id="checkbox-3"> Start a trial with my data right away</label>
 							<label for="coffee" class="item-checkbox"><input type="checkbox" name="coffee" id="checkbox-4"> Get a cup of great coffee</label>
 
-							<img src="{{ captcha.inline() }}" >
+							<label for="captcha" class="item-input">
+								<img src="{{ captcha.inline() }}" > <br>
+								<p>Write the text from above image</p>
+								<input type="text" name="item-captcha" id="item-captcha">
+							</label>
+
 
 							<button type="submit" class="btn btn-white">Send</button>
 						</form>
