@@ -1940,6 +1940,218 @@ section p {
 	margin: 20px 0 0 0
 }
 
+.article .article-img-full {
+	vertical-align: middle;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.article .article-img-full img {
+	max-width: 100%
+}
+
+.case-study-h1 {
+	background: url(../img/home-bg.jpg) center center no-repeat #172438;
+}
+
+ul.normal-list {
+	padding-left: 20px;
+	list-style-type: disc;
+}
+
+ul.normal-list li {
+	font-size: 1.6rem;
+	line-height: 40px;
+	margin-left: 10px;
+	padding-left: 10px;
+	font-weight: 400;
+}
+
+.article.blockquote {
+	padding: 30px 0 90px 0;
+}
+
+.article blockquote {
+	text-align: center;
+	margin: 0 200px;
+}
+
+.article blockquote p {
+	font-size: 34px;
+	color: #00a8ff;
+	font-style: italic;
+	font-weight: 200;
+}
+
+.article blockquote footer {
+	font-size: 1.6rem;
+	font-style: normal;
+	line-height: 40px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	color: #647082;
+}
+
+.article blockquote:before {
+	content: "“";
+	font-size: 120px;
+	left: 160px;
+	position: absolute;
+	line-height: 0;
+	top: 25px;
+	font-weight: 900;
+	font-style: italic;
+	color: #00a8ff;
+	opacity: 0.2;
+	width: 100px;
+}
+
+.article-box-solution .info-article-box > div:only-child {
+	display: block;
+}
+
+.article-divider {
+	border-top: 2px solid #f0f5fb;
+	padding-top: 80px;
+}
+
+.article-divider h1 {
+	color: #00a8ff;
+}
+
+.display-table {
+	display: table;
+	min-height: 230px;
+}
+
+.display-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.partners-head-list.solutions i {
+	float: left;
+	width: 62px;
+}
+
+.partners-head-list.solutions a {
+	display: block;
+}
+
+.partners-head-list.solutions a h2 {
+	margin: 0;
+	padding: 12px;
+}
+
+lable.error {
+	color: red;
+	padding: 10px;
+	display: block;
+}
+
+.alert {
+	padding: 15px;
+	border: 1px solid transparent;
+}
+
+.alert-info {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+
+.mobile-nav {
+	background-color: #fff;
+	padding: 15px 30px 10px 30px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	border: 2px solid #fff;
+	border-top: 1px #ddd;
+	border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	line-height: 36px;
+	font-weight: 500;
+	color: rgb(100, 112, 130);
+	margin-top: 15px;
+	opacity: .99;
+}
+
+.mobile-nav ul {
+	float: none;
+	height: auto;
+}
+
+.mobile-nav li {
+	float: none;
+	margin: 0;
+}
+
+.mobile-nav li a {
+	color: rgb(100, 112, 130);
+}
+
+.mobile-nav {
+	display: none;
+}
+
+.login-btn:hover {
+	opacity: 1;
+}
+
+.btn:hover, .btn-big:hover {
+	border-color: #fff;
+}
+
+.btn.btn-white:hover {
+	border-color: #00a8fe;
+}
+
+.article.item-second {
+	padding-top: 0;
+}
+
+.screenshot:after {
+	content: '';
+	border-radius: 3px;
+	background: url(../img/ico-zoom.svg) center center no-repeat transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+
+.screenshot:before {
+	content: '';
+	border-radius: 3px;
+	background-color: #00a8ff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 8888;
+	opacity: 0.3;
+}
+
+.screenshot:hover img {
+	opacity: 1;
+}
+
+.screenshot img {
+	opacity: 0.4;
+	border-radius: 3px;
+	max-width: 100%;
+	max-height: 100%;
+	padding: 12px;
+}
+
 @media screen and (max-width: 1504px) {
 	.page {
 		padding: 0 50px;
@@ -1967,6 +2179,14 @@ section p {
 		padding-left: 30px;
 		padding-right: 30px;
 		width: 100%
+	}
+
+	.article blockquote {
+		margin: 0 30px;
+	}
+
+	.article blockquote:before {
+		left: 10px;
 	}
 
 	header {
@@ -2844,174 +3064,4 @@ section p {
 	font-weight: bold;
 	padding: 10px;
 	font-size: 25px
-}
-
-.article .article-img-full {
-	vertical-align: middle;
-	position: relative;
-	width: 100%;
-	height: auto;
-}
-
-.article .article-img-full img {
-	max-width: 100%
-}
-
-.case-study-h1 {
-	background: url(../img/home-bg.jpg) center center no-repeat #172438;
-}
-
-ul.normal-list {
-	padding-left: 20px;
-	list-style-type: disc;
-}
-
-ul.normal-list li {
-	font-size: 1.6rem;
-	line-height: 40px;
-	margin-left: 10px;
-	padding-left: 10px;
-	font-weight: 400;
-}
-
-.article blockquote {
-	text-align: center;
-	font-style: italic;
-	padding: 50px;
-}
-
-.article blockquote footer {
-	font-size: 1.6rem;
-	font-style: normal;
-	line-height: 40px;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	border: 0;
-}
-
-.article blockquote:before {
-	content: open-quote;
-	font-size: 10rem;
-	left: 0;
-	position: absolute;
-	line-height: 0;
-	top: 0;
-	color: #f0f5fb;
-}
-
-.article blockquote:after {
-	content: close-quote;
-	font-size: 10rem;
-	right: 0;
-	position: absolute;
-	line-height: 0;
-	bottom: 0;
-	color: #f0f5fb;
-}
-
-.article-box-solution .info-article-box > div:only-child {
-	display: block;
-}
-
-.article-divider {
-	border-top: 2px solid #f0f5fb;
-	padding-top: 80px;
-}
-
-.article-divider h1 {
-	color: #00a8ff;
-}
-
-.display-table {
-	display: table;
-	min-height: 230px;
-}
-
-.display-table-cell {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.partners-head-list.solutions i {
-	float: left;
-	width: 62px;
-}
-
-.partners-head-list.solutions a {
-	display: block;
-}
-
-.partners-head-list.solutions a h2 {
-	margin: 0;
-	padding: 12px;
-}
-
-lable.error {
-	color: red;
-	padding: 10px;
-	display: block;
-}
-
-.alert {
-	padding: 15px;
-	border: 1px solid transparent;
-}
-
-.alert-info {
-	color: #31708f;
-	background-color: #d9edf7;
-	border-color: #bce8f1;
-}
-
-.mobile-nav {
-	background-color: #fff;
-	padding: 15px 30px 10px 30px;
-	position: absolute;
-	left: 0;
-	width: 100%;
-	border: 2px solid #fff;
-	border-top: 1px #ddd;
-	border-radius: 0 0 4px 4px;
-	-webkit-border-radius: 0 0 4px 4px;
-	-moz-border-radius: 0 0 4px 4px;
-	line-height: 36px;
-	font-weight: 500;
-	color: rgb(100, 112, 130);
-	margin-top: 15px;
-	opacity: .99;
-}
-
-.mobile-nav ul {
-	float: none;
-	height: auto;
-}
-
-.mobile-nav li {
-	float: none;
-	margin: 0;
-}
-
-.mobile-nav li a {
-	color: rgb(100, 112, 130);
-}
-
-.mobile-nav {
-	display: none;
-}
-
-.login-btn:hover {
-	opacity: 1;
-}
-
-.btn:hover, .btn-big:hover {
-	border-color: #fff;
-}
-
-.btn.btn-white:hover {
-	border-color: #00a8fe;
-}
-
-.article.item-second {
-	padding-top: 0;
 }
