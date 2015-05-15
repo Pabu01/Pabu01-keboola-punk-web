@@ -1619,7 +1619,7 @@ section p {
 }
 
 .partners-detail-head {
-	padding: 60px 0
+	padding: 60px 0 40px
 }
 
 .partners-detail-head ul {
@@ -1658,7 +1658,7 @@ section p {
 }
 
 .partners-detail-head h2 {
-	margin: 0;
+	margin: 0 0 10px;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 20px;
@@ -1676,10 +1676,24 @@ section p {
 	color: #00a8ff
 }
 
+.partners-detail-description{
+	padding-bottom: 60px;
+}
+
+.partners-detail-description p {
+	margin: 0 0 15px 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 40px;
+	font-weight: 400;
+	color: #647082;
+	text-align: left;
+}
+
 .partners-detail-info {
 	position: relative;
 	border-top: 2px solid #f0f5fb;
-	min-height: 350px;
+	min-height: 270px;
 	*zoom: 1
 }
 
@@ -1693,7 +1707,7 @@ section p {
 }
 
 .partners-detail-info .pull-left {
-	padding: 50px 30px 60px 120px;
+	padding: 50px 60px 60px 120px;
 	width: 50%;
 	height: 100%;
 	text-align: left
@@ -1714,6 +1728,16 @@ section p {
 	line-height: 1.2em;
 	font-weight: 400;
 	color: #9fabbd
+}
+
+.partners-detail-heading {
+	margin: 0 0 15px 0px;
+	font-size: 28px;
+	font-size: 2.8rem;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #9fabbd;
+	text-align: left
 }
 
 .partners-detail-info h2 {
@@ -1774,6 +1798,14 @@ section p {
 
 .partners-detail-bushman {
 	background: url(../img/partners-detail-bushman.png) center center no-repeat #2c1913
+}
+
+.partners-detail-coupa {
+	background: url(../img/partners-detail-coupa.png) center center no-repeat #ffffff
+}
+
+.partners-detail-csc {
+	background: url(../img/partners-detail-ccs.png) center center no-repeat #ffffff
 }
 
 .contact-content .in {
