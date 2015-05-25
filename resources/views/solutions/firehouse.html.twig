@@ -1,0 +1,83 @@
+{% extends "layout.html.twig" %}
+
+{% block head %}
+	<div class="header partners-detail-header"><div class="in">
+			{% include "header.html.twig" %}
+			<article>
+				<h1 class="h1-big">Firehouse Subs</h1>
+				<h2 class="h2-big"><strong>Solution for Restaurant Owners</strong></h2>
+				<div class="tags-list">
+					<a href="#salesFunnel"><span class="tag-item tag-item-second">Sales Funnel</span></a>
+					<a href="#marketingCohorts"><span class="tag-item tag-item-second">Marketing Cohorts</span></a>
+					<a href="#customerBehaviour"><span class="tag-item tag-item-second">Customer behavior</span></a>
+					<a href="#socialNetworks"><span class="tag-item tag-item-second">Social Networks</span></a>
+				</div>
+			</article>
+		</div></div>
+{% endblock %}
+
+{% block content %}
+	<section>
+
+
+
+
+		<article class="article">
+			<div class="in">
+				<div class="article-img-right"><img src="/img/firehouse-dashboard.png" alt=""></div>
+				<div class="desc">
+					<p>Firehouse Subs, the 11th fastest growing franchise of 2015 according to Entrepreneur Magazine, was looking to put the power of data into the hands of their franchisees. Instead of looking to the top for the information their goal was to provide each of their 1000+ franchisee owners with insights into their own operations and overall performance to better manage their businesses. </p>
+
+					<ul class="normal-list">
+						<li><strong>Sales, surveys and reviews data at one report</strong></li>
+						<li><strong>1000+ franchises and same data</strong></li>
+						<li><strong>How do I benchmark with others ?</strong></li>
+						
+					</ul>
+
+					<br>
+
+
+				</div>
+			</div>
+		</article>
+
+		<article class="article">
+			<div class="in">
+				<blockquote>
+					<p>“Working with Keboola changed how we work with our franchisees. By giving them access to data we are empowering them to make the decisions that are best for their business which is in turn is better for our business as a whole.” </p>
+					<footer>— Danny</footer>
+				</blockquote>
+			</div>
+		</article>
+
+
+		{# Firehouse description of project #}
+
+
+		<article class="article-half-list"><div class="in">
+				<h1>More about project</h1>
+			<div class="desc-half-list">
+				<p>After selecting the GoodData platform, Firehouse Subs partnered with Keboola Vancouver to create an analytics platform, called Station Pulse, just for this purpose. Powered by Keboola Connection (KBC), Keboola Vancouver was able to take data from several sources such as sales, surveys and reviews and put all the information in one easily accessible place. Firehouse Subs not only recognized the need to centralize data, but also the value of adding third party applications such as elastic search for keyword detection and weather augmentation to enrich that data being presented to each local franchise.
+				</p>
+
+					<p>
+					Now franchisees have 24/7 access to review their restaurant(s) data and an understanding of how to use this tool to monitor their overall health and performance.  By doing things like keeping an eye on sales and sales KPIs, benchmarking KPI’s against other restaurants and noticing correlations to things like the weather and community donations, franchisee owners can now use the data given to them to run the most successful business possible.
+					</p>
+				</div>
+			</div></article>
+
+
+
+		<div class="article-box"><div class="in-second">
+				<h1><strong>How can we help you</strong></h1>
+				<p>We're on hunt for ROI! With more than 15 years of online marketing and sales experience. Our partners have helped tens of companies in diverse segments to setup, measure and implement marketing and sales campaigns driven by data.  Connecting diverse data sources like ad spend, offline traffic, sales KPIs, CRM data and Customer Support data is just the beginning for us.</p>
+
+				<a href="{{ path('contact') }}" class="btn btn-white">Contact Us</a>
+			</div></div>
+
+		{% include "events.html.twig" %}
+
+		<div class="get-in-touch-btn"><a href="{{ path('contact') }}">Interested in similar solution? Get in touch <i></i></a></div>
+	</section>
+{% endblock %}
