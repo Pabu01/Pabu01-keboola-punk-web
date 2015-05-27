@@ -109,6 +109,11 @@ $app->post('/contact', function () use ($app) {
     return $app->redirect('/contact');
 });
 
+$app->error(function (\Exception $e, $code) use ($app) {
+    return $app['twig']->render('error.html.twig', [
+        'code' => $code
+    ]);
+});
 
 // debug
 $app['debug'] = true;
