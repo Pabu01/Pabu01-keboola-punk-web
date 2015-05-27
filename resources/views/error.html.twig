@@ -17,7 +17,37 @@
 </head>
 <body>
 <div class="page error-page">
+	<div class="in">
+		<header>
+			<h1><a href="/">Keboola</a></h1>
+		</header>
+		<div class="error-code">
+			{{ code }}
+		</div>
+		<div class="error-message">
+			{% if code == 404 %}
+				Uh-oh, the page or file<br> you requested does not exist!
+			{% else %}
+				Uh-oh, something is broken! We will fix it as soon as possible.
+			{% endif %}
+		</div>
+		<div class="error-desc">
+			<h3>How could this happen?</h3>
 
+			<p>
+				The page or file was deleted or moved. <br>
+				Misspelled URL. <br>
+				We made a mistake. <br>
+			</p>
+
+			<div class="error-desc-footer">
+				<p>
+					Try to go back to homepage and navigate from there.
+				</p>
+				<a href="mailto:support@keboola.com">Or let us know if you think its our fault</a>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
