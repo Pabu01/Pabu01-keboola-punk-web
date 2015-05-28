@@ -26,7 +26,7 @@ $app->get('/', function () use ($app) {
 
 
 // partners
-$app->get('/partners', function () use ($app) {
+$app->get('/partners/', function () use ($app) {
     return $app['twig']->render('partners.html.twig');
 })->bind('partners');
 
@@ -36,7 +36,7 @@ $app->get('/partners/{partner}', function ($partner) use ($app) {
 
 
 // stories
-$app->get('/stories', function () use ($app) {
+$app->get('/stories/', function () use ($app) {
     return $app['twig']->render('stories/h1.html.twig');
 })->bind('stories');
 
@@ -46,7 +46,7 @@ $app->get('/stories/{story}', function ($story) use ($app) {
 
 
 // use-cases
-$app->get('/solutions', function () use ($app) {
+$app->get('/solutions/', function () use ($app) {
     return $app['twig']->render('solutions.html.twig');
 })->bind('solutions');
 
@@ -55,7 +55,7 @@ $app->get('/solutions/{case}', function ($case) use ($app) {
 })->bind('solution');
 
 // jobs
-$app->get('/jobs', function () use ($app) {
+$app->get('/jobs/', function () use ($app) {
     return $app['twig']->render('jobs.html.twig');
 })->bind('jobs');
 
@@ -65,7 +65,7 @@ $app->get('/jobs/{job}', function ($job) use ($app) {
 
 
 // contact
-$app->get('/contact', function () use ($app) {
+$app->get('/contact/', function () use ($app) {
 
     /** @var \Gregwar\Captcha\CaptchaBuilder $captchaBuilder */
     $captchaBuilder = $app['captcha.builder'];
@@ -80,7 +80,7 @@ $app->get('/contact', function () use ($app) {
     ]);
 })->bind('contact');
 
-$app->post('/contact', function () use ($app) {
+$app->post('/contact/', function () use ($app) {
     $request = $app['request'];
 
     if ($app['session']->get('phrase') == $request->get('item-captcha')) {
@@ -106,7 +106,7 @@ $app->post('/contact', function () use ($app) {
         $app['session']->getFlashBag()->add('error', "Image code didn't match, plesae try again.");
     }
 
-    return $app->redirect('/contact');
+    return $app->redirect('/contact/');
 });
 
 $app->error(function (\Exception $e, $code) use ($app) {
