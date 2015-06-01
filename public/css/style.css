@@ -444,6 +444,7 @@ a:hover {
 }
 
 .get-in-touch-btn a:hover {
+	color: #fff;
 	border: 2px solid #fff
 }
 
@@ -576,7 +577,8 @@ header li a {
 	transition: all .2s ease-in-out
 }
 
-header li a:hover, header li a.act {
+header li a:hover, header li a:focus, header li a.act {
+	color: #fff;
 	opacity: 1;
 	filter: alpha(opacity=100)
 }
@@ -1114,6 +1116,22 @@ section p {
 
 .article-box-case-study {
 	padding-bottom: 60px
+}
+
+.article a {
+	color: #00a8ff;
+}
+
+a:hover, a:focus {
+	color: #00a8ff;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+	color: #00a8ff;
+}
+
+.cinemas-box .btn:hover {
+	color: #ffffff;
 }
 
 .info-article-box {
@@ -1848,7 +1866,7 @@ section p {
 }
 
 .partners-detail-info-second .pull-left {
-	float: right
+	float: right !important;
 }
 
 .partners-detail-info-second .pull-right {
