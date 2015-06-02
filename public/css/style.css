@@ -580,6 +580,7 @@ header li a {
 header li a:hover, header li a:focus, header li a.act {
 	color: #fff;
 	opacity: 1;
+	text-decoration: none;
 	filter: alpha(opacity=100)
 }
 
@@ -1118,7 +1119,7 @@ section p {
 	padding-bottom: 60px
 }
 
-.article a {
+.article a, .article-half-list a {
 	color: #00a8ff;
 }
 
@@ -1592,7 +1593,6 @@ a:hover, a:focus {
 
 .webinar-info-box .desc {
 	position: relative;
-	float: left;
 	padding: 0 0 0 100px;
 	min-height: 70px;
 	text-align: left
@@ -1640,7 +1640,6 @@ a:hover, a:focus {
 	font-weight: 500;
 	color: #272e39;
 	vertical-align: top;
-	min-width: 500px;
 	text-align: right
 }
 
@@ -1912,6 +1911,18 @@ a:hover, a:focus {
 
 .partners-detail-csc {
 	background: url(../img/partners-detail-ccs.png) center center no-repeat #ffffff
+}
+
+.partners-detail-gorila {
+	background: url(../img/partners-detail-gorila.png) center center no-repeat #48bbb4
+}
+
+.partners-detail-seznam {
+	background: url(../img/partners-detail-seznam.png) center center no-repeat #ffffff
+}
+
+.partners-detail-h1 {
+	background: url(../img/partners-detail-h1.png) center center no-repeat #81c630
 }
 
 .contact-content .in {
@@ -2257,8 +2268,13 @@ label.error {
 	border-color: #fff;
 }
 
+.btn-big:hover {
+	color: #fff;
+}
+
 .btn.btn-white:hover {
 	border-color: #00a8fe;
+	color: #00a8fe
 }
 
 .article.item-second {
