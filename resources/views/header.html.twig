@@ -1,22 +1,24 @@
-<header>
-	<h1><a href="{{ path('homepage') }}">Keboola</a></h1>
-	<div class="mobile-menu">
-		<a href="{{ path('contact') }}" class="login-btn">CONTACT</a>
-		<a href="" class="mobile-btn"></a>
-		<div class="mobile-nav">
-			<ul>
+<div class="in">
+	<header>
+		<h1><a href="{{ path('homepage') }}">Keboola</a></h1>
+		<div class="mobile-menu">
+			<a href="{{ path('contact') }}" class="login-btn">CONTACT</a>
+			<a href="" class="mobile-btn"></a>
+			<div class="mobile-nav">
+				<ul>
+					<li><a href="{{ path('stories') }}">SUCCESS STORIES</a></li>
+					<li><a href="{{ path('solutions') }}">SOLUTIONS</a></li>
+					<li><a href="{{ path('partners') }}">PARTNERS</a></li>
+				</ul>
+			</div>
+		</div>
+		<nav><ul>
 				<li><a href="{{ path('stories') }}">SUCCESS STORIES</a></li>
 				<li><a href="{{ path('solutions') }}">SOLUTIONS</a></li>
 				<li><a href="{{ path('partners') }}">PARTNERS</a></li>
-			</ul>
-		</div>
-	</div>
-	<nav><ul>
-			<li><a href="{{ path('stories') }}">SUCCESS STORIES</a></li>
-			<li><a href="{{ path('solutions') }}">SOLUTIONS</a></li>
-			<li><a href="{{ path('partners') }}">PARTNERS</a></li>
 
-			{#<li class="pull-right login-item"><a href="">LOGIN</a></li>#}
-			<li class="pull-right login-item"><a href="{{ path('contact') }}">CONTACT</a></li>
-		</ul></nav>
-</header>
+				{#<li class="pull-right login-item"><a href="">LOGIN</a></li>#}
+				<li class="pull-right login-item"><a href="{{ path('contact') }}">CONTACT</a></li>
+			</ul></nav>
+	</header>
+</div>

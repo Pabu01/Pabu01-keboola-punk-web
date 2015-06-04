@@ -3,8 +3,8 @@
 {% block title %}McPen | Stories | {% endblock %}
 
 {% block head %}
+	{% include "header.html.twig" %}
 	<div class="header case-study-mcpen"><div class="in">
-		{% include "header.html.twig" %}
 		<article>
 			<h2><strong>Data Driven Business route one year ago</strong></h2>
 			<h1>McPen story</h1>
@@ -29,8 +29,6 @@
 
 {% block content %}
 			<section>
-
-
 				<article class="article blockquote">
 					<div class="in">
 						<blockquote>
@@ -39,65 +37,49 @@
 						</blockquote>
 					</div>
 				</article>
-
-
-
 				<article class="article-half-list"><div class="in">
 						<h1>About the project</h1>
 					<div class="desc-half-list">
-						<p>McPen has started to go Data Driven Business route one year ago. With the help of Keboola partner Ascoria they have created a very retail focused solution that take the data from different sources like POS, Frames, etc. and turned it into a full fledge operational management system that is now used in all levels of McPen management from CEO down to floor workers who run their stationary goods shops.
-
-
-						</p>
-
-							<p>
-							MacPen’s strategy was to generate upsells on the customers that spend the most money in the shop. A single glance on the sales data shows that while the biggest income comes from customers buying totals between 200 and 500 CZK, the biggest potential for upsell lies in the category of customers that buys totals up to 50 CZK (around 2 USD) which makes up to 42% of all customers of Mc Pen.
-
-
-							</p>
-						</div>
-					</div></article>
+						<p>McPen has started to go Data Driven Business route one year ago. With the help of Keboola partner Ascoria they have created a very retail focused solution that take the data from different sources like POS, Frames, etc. and turned it into a full fledge operational management system that is now used in all levels of McPen management from CEO down to floor workers who run their stationary goods shops.</p>
+						<p>McPen’s strategy was to generate upsells on the customers that spend the most money in the shop. A single glance on the sales data shows that while the biggest income comes from customers buying totals between 200 and 500 CZK, the biggest potential for upsell lies in the category of customers that buys totals up to 50 CZK (around 2 USD) which makes up to 42% of all customers of McPen.</p>
+					</div>
+				</div></article>
 
 				<article class="article">
 						<div class="article-img-full"><img src="/img/case-bg-h1-blue.jpg"></div>
 				</article>
 
 				<article class="article-half-list"><div class="in">
-						<h1>Hero Story</h1>
-						<div class="desc-half-list">
-							<p>McPen's CEO and our partner company Ascoria were  able to put the whole project
-								together within just couple of months. Starting from scratch, being lean and adding
-								new and new features as they were tested and proven their benefit to the organisation.
-								All of this without a need for a single developer envolved.
+					<h1>Hero Story</h1>
+					<div class="desc-half-list">
+						<p>McPen's CEO and our partner company Ascoria were  able to put the whole project
+							together within just couple of months. Starting from scratch, being lean and adding
+							new and new features as they were tested and proven their benefit to the organisation.
+							All of this without a need for a single developer envolved.</p>
+						<p>Mr. Petr, CEO of McPen, recognized the need for complex change management as he wanted
+						to envolve not only top management and trained data scientist, but his goal was a company wide
+						deployment and use of the data as the fundamental layer for everyday decisions done righ on the floor
+						and not in some glass office in HQ. He slowly envolved all managarial layers of the organization,
+						learning how to use data for daily operations first himself.</p>
+					</div>
+				</div></article>
 
-								</p>
-							<p>
-							Mr. Petr, CEO of McPen, recognized the need for complex change management as he wanted
-							to envolve not only top management and trained data scientist, but his goal was a company wide
-							deployment and use of the data as the fundamental layer for everyday decisions done righ on the floor
-							and not in some glass office in HQ. He slowly envolved all managarial layers of the organization,
-							learning how to use data for daily operations first himself.
-
-						</p>
-						</div>
-					</div></article>
-
-					<article class="article">
-							<div class="article-img-full"><img src="/img/case-bg-h1-photo.jpg"></div>
-					</article>
+				<article class="article">
+						<div class="article-img-full"><img src="/img/case-bg-h1-photo.jpg"></div>
+				</article>
 
 				<article class="article-half-list"><div class="in">
-						<h1>Results</h1>
-						<div class="desc-half-list">
-							<p>Milan was able to deliver the information needed to get the job done across all levels in the company from top managers to floor workers and involve them to use the data to improve their job.
+					<h1>Results</h1>
+					<div class="desc-half-list">
+						<p>Milan was able to deliver the information needed to get the job done across all levels in the company from top managers to floor workers and involve them to use the data to improve their job.
 
-							By using Data 10 minutes / day by all employees McPen managed to increase the volume of the average basket by <STRONG>30%</STRONG> !!!
-							</p>
+						By using Data 10 minutes / day by all employees McPen managed to increase the volume of the average basket by <STRONG>30%</STRONG> !!!
+						</p>
 
-							<p>Our shopkeepers can access this information right on the spot using a web browser. And find out the particular products that the customers most likely buy together.
-							</p>
-						</div>
-					</div></article>
+						<p>Our shopkeepers can access this information right on the spot using a web browser. And find out the particular products that the customers most likely buy together.
+						</p>
+					</div>
+				</div></article>
 
 				<article class="article blockquote">
 					<div class="in">
@@ -108,23 +90,21 @@
 					</div>
 				</article>
 
-
-
 				<article class="article-half-list"><div class="in">
-						<h1>About McPen</h1>
-						<div class="desc-half-list">
-							<p>McPen is an European chain distributor of stationary goods.
-								Among it's top selling brands can be found: Herlitz, Centropen,
-								Koh-i-noor, Pentel, Pilot, Parker, Pelikan, Stabilo, Pritt, Maped,
-								Snopake, SusyCard, Albi, Argus, and many others.
-								McPen is one of the first retail industry operations in SMB segment
-								that has fully embraced the data-driven approach to business and
-								has democratized the access to data to all of it's employees,
-								allowing them to put the data in context make make informed decissions
-								on their own.
-							</p>
-						</div>
-					</div></article>
+					<h1>About McPen</h1>
+				<div class="desc-half-list">
+					<p>McPen is an European chain distributor of stationary goods.
+						Among it's top selling brands can be found: Herlitz, Centropen,
+						Koh-i-noor, Pentel, Pilot, Parker, Pelikan, Stabilo, Pritt, Maped,
+						Snopake, SusyCard, Albi, Argus, and many others.
+						McPen is one of the first retail industry operations in SMB segment
+						that has fully embraced the data-driven approach to business and
+						has democratized the access to data to all of it's employees,
+						allowing them to put the data in context make make informed decissions
+						on their own.
+					</p>
+				</div>
+				</div></article>
 
 				<article class="article-box article-box-case-study"><div class="in">
 					<div class="info-article-box">
@@ -149,7 +129,7 @@
 						</div>
 					</div>
 				</div></article>
-				
+
 		<div class="case-study-box"><div class="in">
 			<h1>Relevant case studies</h1>
 			<ul class="box-list">

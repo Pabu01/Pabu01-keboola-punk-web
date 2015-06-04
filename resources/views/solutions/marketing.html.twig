@@ -3,19 +3,19 @@
 {% block title %}Marketing | Solutions | {% endblock %}
 
 {% block head %}
+	{% include "header.html.twig" %}
 	<div class="header partners-detail-header"><div class="in">
-			{% include "header.html.twig" %}
-			<article>
-				<h1 class="h1-big">Marketing</h1>
-				<h2 class="h2-big"><strong>Do relevant business decisions</strong></h2>
-				<div class="tags-list">
-					<a href="#salesFunnel"><span class="tag-item tag-item-second">Sales Funnel</span></a>
-					<a href="#marketingCohorts"><span class="tag-item tag-item-second">Marketing Cohorts</span></a>
-					<a href="#customerBehaviour"><span class="tag-item tag-item-second">Customer behavior</span></a>
-					<a href="#socialNetworks"><span class="tag-item tag-item-second">Social Networks</span></a>
-				</div>
-			</article>
-		</div></div>
+		<article>
+			<h1 class="h1-big">Marketing</h1>
+			<h2 class="h2-big"><strong>Do relevant business decisions</strong></h2>
+			<div class="tags-list">
+				<a href="#salesFunnel"><span class="tag-item tag-item-second">Sales Funnel</span></a>
+				<a href="#marketingCohorts"><span class="tag-item tag-item-second">Marketing Cohorts</span></a>
+				<a href="#customerBehaviour"><span class="tag-item tag-item-second">Customer behavior</span></a>
+				<a href="#socialNetworks"><span class="tag-item tag-item-second">Social Networks</span></a>
+			</div>
+		</article>
+	</div></div>
 {% endblock %}
 
 {% block content %}

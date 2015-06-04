@@ -3,17 +3,17 @@
 {% block title %}Agency | Solutions | {% endblock %}
 
 {% block head %}
+	{% include "header.html.twig" %}
 	<div class="header partners-detail-header"><div class="in">
-			{% include "header.html.twig" %}
-			<article>
-				<h1 class="h1-big">Agency</h1>
-				<h2 class="h2-big"><strong>Be efficient</strong></h2>
-				<div class="tags-list">
-					<a href="#earthworms"><span class="tag-item tag-item-second">Earthworms</span></a>
-					<a href="#activityReports"><span class="tag-item tag-item-second">Activity Reports</span></a>
-				</div>
-			</article>
-		</div></div>
+		<article>
+			<h1 class="h1-big">Agency</h1>
+			<h2 class="h2-big"><strong>Be efficient</strong></h2>
+			<div class="tags-list">
+				<a href="#earthworms"><span class="tag-item tag-item-second">Earthworms</span></a>
+				<a href="#activityReports"><span class="tag-item tag-item-second">Activity Reports</span></a>
+			</div>
+		</article>
+	</div></div>
 {% endblock %}
 
 {% block content %}

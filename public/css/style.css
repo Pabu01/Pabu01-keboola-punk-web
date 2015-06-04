@@ -296,6 +296,14 @@ a:hover {
 	opacity: 0.3;
 }
 
+#carousel-stories .carousel-indicators li {
+	border: 1px solid #fff;
+}
+
+#carousel-stories .carousel-indicators .active {
+	background-color: #fff;
+}
+
 .in {
 	position: relative;
 	margin: 0 auto 0;
@@ -622,12 +630,19 @@ header .mobile-menu {
 }
 
 .header article {
-	position: relative;
+	/*position: relative;*/
 	padding: 190px 0 0 0;
 	text-align: left
 }
 
-.header article h1 {
+.header-article {
+	position: absolute;
+	padding: 190px 0 0 0;
+	text-align: left;
+	z-index: 2
+}
+
+.header article h1, .header-article h1 {
 	position: relative;
 	margin: 0 0 50px 0;
 	padding: 0 0 50px 0;
@@ -639,7 +654,7 @@ header .mobile-menu {
 	letter-spacing: -1.5px
 }
 
-.header article h1:before {
+.header article h1:before, .header-article h1:before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -650,16 +665,16 @@ header .mobile-menu {
 	background: #00a8fe
 }
 
-.header article .h1-big {
+.header article .h1-big, .header-article .h1-big {
 	margin: 0 0 10px 0;
 	padding: 0
 }
 
-.header article .h1-big:before {
+.header article .h1-big:before, .header-article .h1-big:before {
 	display: none
 }
 
-.header article h2 {
+.header article h2, .header-article h2 {
 	margin: 0 0 15px 0;
 	font-size: 19px;
 	font-size: 1.9rem;
@@ -669,11 +684,11 @@ header .mobile-menu {
 	text-transform: uppercase
 }
 
-.header article h2 strong {
+.header article h2 strong, .header-article h2 strong {
 	font-weight: 700
 }
 
-.header article .h2-big {
+.header article .h2-big, .header-article .h2-big {
 	margin: 0 0 30px 0;
 	font-size: 24px;
 	font-size: 2.4rem;
@@ -681,7 +696,7 @@ header .mobile-menu {
 	letter-spacing: -1px
 }
 
-.header article p {
+.header article p, .header-article p {
 	margin: 0 0 40px 0;
 	max-width: 670px;
 	font-size: 30px;
@@ -693,7 +708,7 @@ header .mobile-menu {
 
 .header article .customer-play-video {
 	position: absolute;
-	right: -80px;
+	right: -30px;
 	bottom: 60px;
 	padding: 15px 88px 0 0;
 	height: 80px;
@@ -720,7 +735,6 @@ header .mobile-menu {
 .home-header {
 	width: 100%;
 	height: 820px;
-	background: url(../img/home-bg.jpg) center center no-repeat #172438;
 	background-size: cover
 }
 
@@ -2195,6 +2209,14 @@ ul.normal-list li {
 	padding: 12px;
 }
 
+.customer-info .readmore-link {
+	color: #00a8fe
+}
+
+.customer-info:hover .readmore-link {
+	color: #fff
+}
+
 label.error {
 	color: red;
 	padding: 0 10px;
@@ -2356,7 +2378,10 @@ label.error {
 	}
 
 	header {
-		padding-left: 160px
+		padding-left: 160px;
+		left: 30px;
+		right: 30px;
+		width: auto
 	}
 
 	header ul {
@@ -2461,12 +2486,12 @@ label.error {
 		display: none
 	}
 
-	.header article {
+	.header article, .header-article {
 		padding-top: 130px;
 		padding-bottom: 40px
 	}
 
-	.header article h1 {
+	.header article h1, .header-article h1 {
 		margin: 0 0 30px 0;
 		padding: 0 0 30px 0;
 		font-size: 50px;
@@ -2474,23 +2499,23 @@ label.error {
 		line-height: 1.2em
 	}
 
-	.header article h2 {
+	.header article h2, .header-article h2 {
 		margin: 0 0 15px 0;
 		font-size: 19px;
 		font-size: 1.9rem;
 		line-height: 1.2em
 	}
 
-	.header article .h2-big {
+	.header article .h2-big, .header-article .h2-big {
 		font-size: 20px;
 		font-size: 2rem;
 		line-height: 1.2em
 	}
 
-	.header article > p {
+	.header article > p, .header-article > p {
 		max-width: 60%;
-		font-size: 24px;
-		font-size: 2.4rem;
+		font-size: 20px;
+		font-size: 2rem;
 		line-height: 1.4em
 	}
 
@@ -2499,7 +2524,7 @@ label.error {
 	}
 
 	.home-header {
-		height: auto
+		/*height: auto*/
 	}
 
 	.home-header article {
@@ -3051,11 +3076,11 @@ label.error {
 }
 
 @media screen and (max-width: 650px) {
-	.header article > p {
+	.header article > p, .header-article > p {
 		max-width: 100%
 	}
 
-	.header article .btn {
+	.header article .btn, .header-article .btn {
 		margin-bottom: 20px
 	}
 }

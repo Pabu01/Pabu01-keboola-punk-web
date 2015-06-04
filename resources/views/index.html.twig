@@ -4,23 +4,19 @@
 	web services, internal databases, etc..	Display it in Tableau or GoodData.{% endblock %}
 
 {% block head %}
-	<div class="header home-header"><div class="in">
-		{% include "header.html.twig" %}
-		<article>
+	{% include "header.html.twig" %}
+	<div class="in">
+		<article class="header-article">
 			<h2><strong>Data Integration</strong> & <strong>Collaboration platform</strong></h2>
 			<h1>Keboola Connection</h1>
 			<p>Blend data from various sources including social networks,
-			web services, internal databases, etc.
-			Display it in Tableau or GoodData to learn your business’ true story.</p>
+				web services, internal databases, etc.
+				Display it in Tableau or GoodData to learn your business’ true story.</p>
 			<a href="{{ path('contact') }}" class="btn btn-big btn-white">ASK FOR DEMO</a>
-			<a href="http://blog.keboola.com/the-beginners-guide-to-keboola" target="_blank" class="btn btn-big">LEARN MORE</a>
-			<a href="{{ path('story', {'story': 'h1'}) }}" class="customer-play-video customer-info">
-				<strong>TOMAS VYSKOCIL</strong><br>
-				SEO Department head<br>
-				H1.cz
-			</a>
+			{#<a href="" class="btn btn-big">LEARN MORE</a>#}
 		</article>
-	</div></div>
+	</div>
+	{% include "header-carousel.html.twig" %}
 {% endblock %}
 
 {% block content %}

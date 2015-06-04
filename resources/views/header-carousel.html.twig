@@ -1,0 +1,37 @@
+<div id="carousel-stories" class="carousel slide" data-ride="carousel" data-interval="10000">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-stories" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-stories" data-slide-to="1"></li>
+		{#<li data-target="#carousel-stories" data-slide-to="2"></li>#}
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+
+		<div class="item active">
+			<div class="header home-header case-study-h1"><div class="in">
+				<article>
+					<a href="{{ path('story', {'story': 'h1'}) }}" class="customer-play-video customer-info">
+						<strong>TOMAS VYSKOCIL</strong><br>
+						SEO Department - H1.cz<br>
+						<span class="readmore-link">read story...</span><br>
+					</a>
+				</article>
+			</div></div>
+		</div>
+
+		<div class="item">
+			<div class="header home-header case-study-mcpen"><div class="in">
+				<article>
+					<a href="{{ path('story', {'story': 'mcpen'}) }}" class="customer-play-video customer-info">
+						<strong>MILAN PETR</strong><br>
+						CEO – McPen Co<br>
+						<span class="readmore-link">read story...</span><br>
+					</a>
+				</article>
+			</div></div>
+		</div>
+	</div>
+</div>
+
