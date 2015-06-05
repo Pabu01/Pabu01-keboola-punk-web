@@ -1046,6 +1046,10 @@ section p {
 	text-align: left
 }
 
+.article .desc p {
+	padding-right: 25px
+}
+
 .article .desc-right {
 	float: right
 }
@@ -1075,7 +1079,7 @@ section p {
 
 .article .article-img-right {
 	left: auto;
-	right: -40px;
+	right: -25px;
 	width: 50%;
 	text-align: center;
 	overflow: hidden;
