@@ -3120,6 +3120,11 @@ label.error {
 }
 
 @media screen and (max-width: 530px) {
+	header {
+		left: 20px;
+		right: 10px
+	}
+	
 	.in, .in-second {
 		padding-left: 20px;
 		padding-right: 20px
