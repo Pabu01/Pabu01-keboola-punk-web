@@ -1741,6 +1741,15 @@ a:hover, a:focus {
 	bottom: 40px
 }
 
+.partners-list article:hover {
+	border-color: #00a8fe
+}
+
+.partners-list article:hover .btn {
+	border-color: #00a8fe;
+	color: #00a8fe
+}
+
 .partners-detail-head {
 	padding: 60px 0 40px
 }

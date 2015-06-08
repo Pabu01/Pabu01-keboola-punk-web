@@ -71,15 +71,15 @@
 
         var match = function(){
             var newHeight = 0;
-            $('.box-list > li > article, .partners-list > li > article').each(function(){
+            $('.box-list > li > article, .partners-list > li > a > article').each(function(){
                 if ($(this).innerHeight() > newHeight) {
                     newHeight = $(this).outerHeight();
                 }
             });
-            $('.box-list > li > article, .partners-list > li > article').css('height', newHeight);
+            $('.box-list > li > article, .partners-list > li > a > article').css('height', newHeight);
         };
         var unmatch = function(){
-            $('.box-list > li > article, .partners-list > li > article').css('height', 'auto');
+            $('.box-list > li > article, .partners-list > li > a > article').css('height', 'auto');
         };
 
 
