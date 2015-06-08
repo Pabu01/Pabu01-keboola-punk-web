@@ -1,13 +1,25 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title>{% block title %}{% endblock %}Keboola</title>
-	<meta name="description" content="{% block description %}{% endblock %}">
-	<meta name="author" content="r4ms3s.cz">
+	<meta name="description" content="{% block description %}Keboola is a global BI consulting company. We are a team of data geeks spanning two continents and nine time zones ready to help you understand your data in the ways that you wanted to months ago.{% endblock %}">
+	<meta name="author" content="Keboola">
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+	{% block og %}
+	<meta property="fb:app_id" content="486245961539147">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://www.keboola.com">
+	<meta property="og:site_name" content="Keboola">
+	<meta property="og:title" content="Keboola: Work with data, make money">
+	<meta property="og:description" content="Keboola is a global BI consulting company. We are a team of data geeks spanning two continents and nine time zones ready to help you understand your data in the ways that you wanted to months ago.">
+	<meta property="og:image" content="http://www.keboola.com/img/keboola-web-screen.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	{% endblock %}
 
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -58,7 +70,7 @@
 			</ul>
 
 			<ul class="pull-right">
-				<li><a href="https://www.facebook.com/KeboolaHQ" target="_blank" class="fb">Facebook</a></li>
+				<li><a href="https://www.facebook.com/KeboolaHQ" class="fb">Facebook</a></li>
 				<li><a href="https://twitter.com/keboola" class="tw" target="_blank">Twitter</a></li>
 				<li><a href="https://www.linkedin.com/company/keboola" class="linked" target="_blank">LinkedIn</a></li>
 			</ul>
