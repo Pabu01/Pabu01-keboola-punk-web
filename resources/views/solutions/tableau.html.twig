@@ -1,0 +1,109 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Marketing | Solutions | {% endblock %}
+
+{% block head %}
+	{% include "header.html.twig" %}
+	<div class="header partners-detail-header"><div class="in">
+		<article>
+			<h1 class="h1-big">Keboola for Tableau</h1>
+			<h2 class="h2-big"><strong>Do relevant business decisions</strong></h2>
+			<div class="tags-list">
+				<a href="#salesFunnel"><span class="tag-item tag-item-second">Sales Funnel</span></a>
+				<a href="#marketingCohorts"><span class="tag-item tag-item-second">Marketing Cohorts</span></a>
+				<a href="#customerBehaviour"><span class="tag-item tag-item-second">Customer behavior</span></a>
+				<a href="#socialNetworks"><span class="tag-item tag-item-second">Social Networks</span></a>
+			</div>
+		</article>
+	</div></div>
+{% endblock %}
+
+{% block content %}
+	<section>
+		<article class="article">
+			<div class="in">
+				<div class="article-img-right"><img src="/img/sale-content-img.png" alt=""></div>
+				<div class="desc">
+					<p>When planning a new product launch and deciding where to spend your marketing budget, you probably have questions regarding the impact of your campaign:</p>
+
+					<ul class="normal-list">
+						<li><strong>How long it will take to turn marketing leads into faithful customers?</strong></li>
+						<li><strong>Did I target the correct customer group?</strong></li>
+						<li><strong>Do my potential customers respond to the advertisement as expected?</strong></li>
+						<li><strong>What is the return of on investment for my campaign based on different target groups and products?</strong></li>
+					</ul>
+
+					<br>
+
+
+					<p> Our clients have asked these and other inspired questions which you can check out <a href="http://wiki.keboola.com/home/keboola-environment/sales"> here.</a><BR>
+
+					What we have discovered is that by combining these question with an analytical mindset, you can  create the reports your company needs to invest in better marketing decisions and generate a higher return on investment. </p>
+
+				</div>
+			</div>
+		</article>
+
+		<article class="article">
+			<div class="in">
+				<blockquote>
+					<p>When looking at our marketing model, everything seemed to be going according to plan. But when we looked deeper into apparently well-performing campaigns, we found out that while some ads and channels were performing extraordinarily well, others were draining the overall average leading to mediocre results.</p>
+					<footer>R. Novaček Gorilla Mobile</footer>
+				</blockquote>
+			</div>
+		</article>
+
+
+		{# SALES FUNNEL #}
+
+		<article class="article article-divider">
+			<div class="in">
+				<div class="article-img-right">
+					<a class="screenshot" href="/img/solutions/gorila-sales-funnel.png" data-lightbox="gorila-sales-funnel" data-title="Sales Funnel">
+						<img src="/img/solutions/gorila-sales-funnel.png" alt="sales funnel">
+					</a>
+				</div>
+				<div class="desc">
+					<h1 id="salesFunnel">Sales Funnel</h1>
+					<p>Automated data blending and enrichment for Tableau is a breeze with Keboola Connection. Use KBC’s transformation engine to join streams from both on-premise and cloud data sources. The Tableau integration allows automatic distribution of TDE extract files to desktops or servers or creates database connection for on-demand data pulls.</p>
+					<p>Because KBC does all the heavy lifting, Tableau receives the data in optimal form that allows you to maximize the value of all the great Tableau features.</p>
+					<p>A fully Cloud based solution, KBC does not depend on local computing power. This further reduces your infrastructure need for a Tableau-crowned data stack. The SQL and R based transformation engine allows analysts like yourself to use the knowledge you already have to avoid the steep learning curve of competing ETL solutions. The built-in secure storage eliminates the need for separate database or DWH solution.</p>
+				</div>
+			</div>
+		</article>
+
+
+
+		<article class="article">
+			<div class="in">
+				<div class="article-img-right">
+					<a class="screenshot" href="/img/solutions/sales-funnel-2.png" data-lightbox="sales-funnel-2" data-title="Sales Funnel 2">
+						<img src="/img/solutions/sales-funnel-2.png" alt="">
+					</a>
+				</div>
+				<div class="desc">
+					<p>The Analytics App Store within KBC provides plug-and-play predictive and enrichment applications to further add to the value of the data.
+
+					</p>
+
+					<p>Check out our video demo to see how KBC allows setting and scheduling automatic data stream from two disparate data sources under 10 minutes, and feel free to connect with us directly if you are looking for a specific solution for your unique business needs.
+
+					</p>
+				</div>
+			</div>
+		</article>
+
+	
+
+		<div class="article-box"><div class="in-second">
+				<h1><strong>How can we help you</strong></h1>
+				<p>With more than 15 years of online marketing and sales experience, our partners have helped many companies set-up, measure and implement marketing and sales campaigns driven by data. Regardless of your industry, unique target segment or data sources (CRM, online sales, ad spend etc.) we are all about connecting what you already have to improve your ROI.</p>
+
+				<a href="{{ path('contact') }}" class="btn btn-white">Contact Us</a>
+			</div></div>
+
+		{% include "events.html.twig" %}
+
+		<div class="get-in-touch-btn"><a href="{{ path('contact') }}">Interested in similar solution? Get in touch <i></i></a></div>
+	</section>
+{% endblock %}
