@@ -1036,12 +1036,13 @@ section p {
 
 .article {
 	position: relative;
-	padding: 80px 0 90px 0;
+	padding: 80px 0 70px 0;
 	width: 100%;
 	height: auto
 }
 
 .article .desc {
+	min-height: 400px;
 	width: 50%;
 	text-align: left
 }
@@ -1583,7 +1584,17 @@ a:hover, a:focus {
 	height: 240px
 }
 
-.cinemas-box ul .img:after {
+.article-img-right .img {
+	position: relative;
+	margin: 0 0 16px 0;
+	height: 400px
+}
+
+.article-img-right .img .glyphicon-play-circle {
+	line-height: 400px;
+}
+
+.cinemas-box ul .img:after, .article-img-right .img:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1596,7 +1607,7 @@ a:hover, a:focus {
 	z-index: 3
 }
 
-.cinemas-box ul .img img {
+.cinemas-box ul .img img, .article-img-right .img img {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
@@ -3294,7 +3305,9 @@ label.error {
 	color: #fff;
 	background-color: #000;
 	opacity: .4;
-	z-index: 5
+	z-index: 5;
+	left: 0;
+	top: 0
 }
 
 .img .glyphicon-play-circle:hover {
