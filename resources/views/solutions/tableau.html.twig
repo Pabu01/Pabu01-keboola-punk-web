@@ -20,7 +20,7 @@
 
 {% block content %}
 	<section>
-		<article class="article">
+		{# <article class="article">
 			<div class="in">
 				<div class="article-img-right"><img src="/img/sale-content-img.png" alt=""></div>
 				<div class="desc">
@@ -53,21 +53,23 @@
 			</div>
 		</article>
 
+		#}
 
-		{# SALES FUNNEL #}
+
 
 		<article class="article article-divider">
 			<div class="in">
 				<div class="article-img-right">
-					<a class="screenshot" href="/img/solutions/gorila-sales-funnel.png" data-lightbox="gorila-sales-funnel" data-title="Sales Funnel">
-						<img src="/img/solutions/gorila-sales-funnel.png" alt="sales funnel">
+					<a class="screenshot" href="/img/solutions/Tableau-import.png" data-lightbox="Tableau-import" data-title="Import Data to Tableau">
+						<img src="/img/solutions/Tableau-import.png" alt="Import Data to Tableau">
 					</a>
 				</div>
 				<div class="desc">
-					<h1 id="salesFunnel">Sales Funnel</h1>
-					<p>Automated data blending and enrichment for Tableau is a breeze with Keboola Connection. Use KBC’s transformation engine to join streams from both on-premise and cloud data sources. The Tableau integration allows automatic distribution of TDE extract files to desktops or servers or creates database connection for on-demand data pulls.</p>
+				{#	<h1 id="salesFunnel">Tableau & Keboola</h1>   #}
+					<p>Automated data <STRONG>blending</STRONG> and <STRONG>enrichment</STRONG> for Tableau is a breeze with Keboola Connection. Use KBC’s transformation engine to join streams from both <STRONG>on-premise</STRONG> and <STRONG>cloud</STRONG> data sources. The Tableau integration allows automatic distribution of TDE extract files to desktops or servers or creates database connection for on-demand data pulls.</p>
 					<p>Because KBC does all the heavy lifting, Tableau receives the data in optimal form that allows you to maximize the value of all the great Tableau features.</p>
-					<p>A fully Cloud based solution, KBC does not depend on local computing power. This further reduces your infrastructure need for a Tableau-crowned data stack. The SQL and R based transformation engine allows analysts like yourself to use the knowledge you already have to avoid the steep learning curve of competing ETL solutions. The built-in secure storage eliminates the need for separate database or DWH solution.</p>
+					<p>A fully <STRONG>Cloud based </STRONG> solution, KBC does not depend on local computing power. This further reduces your infrastructure need for a Tableau-crowned data stack.
+					The <STRONG>SQL</STRONG> and <STRONG>R</STRONG> based transformation engine allows analysts like yourself to use the knowledge you already have to avoid the steep learning curve of competing ETL solutions. The built-in secure storage eliminates the need for separate database or DWH solution.</p>
 				</div>
 			</div>
 		</article>
@@ -77,27 +79,28 @@
 		<article class="article">
 			<div class="in">
 				<div class="article-img-right">
-					<a class="screenshot" href="/img/solutions/sales-funnel-2.png" data-lightbox="sales-funnel-2" data-title="Sales Funnel 2">
-						<img src="/img/solutions/sales-funnel-2.png" alt="">
+					<a class="screenshot" href="/img/solutions/TDE-Writer.png" data-lightbox="Keboola Tableau TDE Writer" data-title="Keboola Tableau TDE Writer">
+						<img src="/img/solutions/TDE-Writer.png" alt="">
 					</a>
 				</div>
 				<div class="desc">
-					<p>The Analytics App Store within KBC provides plug-and-play predictive and enrichment applications to further add to the value of the data.
+					<p>The Analytics App Store within KBC provides plug-and-play <STRONG>predictive</STRONG> and enrichment applications
+					to further add to the value of the data.
 
 					</p>
 
-					<p>Check out our video demo to see how KBC allows setting and scheduling automatic data stream from two disparate data sources under 10 minutes, and feel free to connect with us directly if you are looking for a specific solution for your unique business needs.
+					<p>Check out our video demo to see how KBC allows setting and scheduling automatic data stream from <STRONG>two disparate</STRONG> data sources under <STRONG>10 minutes</STRONG>, and feel free to connect with us directly if you are looking for a specific solution for your unique business needs.
 
 					</p>
 				</div>
 			</div>
 		</article>
 
-	
+
 
 		<div class="article-box"><div class="in-second">
 				<h1><strong>How can we help you</strong></h1>
-				<p>With more than 15 years of online marketing and sales experience, our partners have helped many companies set-up, measure and implement marketing and sales campaigns driven by data. Regardless of your industry, unique target segment or data sources (CRM, online sales, ad spend etc.) we are all about connecting what you already have to improve your ROI.</p>
+				<p>Working on larger data integration projects? Want to load the data into Tableau and make it repeatable and easy ? Keboola Connection is the right answer. Ask for demo.</p>
 
 				<a href="{{ path('contact') }}" class="btn btn-white">Contact Us</a>
 			</div></div>
