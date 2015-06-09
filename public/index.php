@@ -109,6 +109,12 @@ $app->post('/contact/', function () use ($app) {
     return $app->redirect('/contact/');
 });
 
+// tableau
+$app->get('/tableau/', function () use ($app) {
+    return $app['twig']->render('tableau.html.twig');
+})->bind('tableau');
+
+// error page
 $app->error(function (\Exception $e, $code) use ($app) {
     return $app['twig']->render('error.html.twig', [
         'code' => $code
