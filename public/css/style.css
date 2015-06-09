@@ -1952,6 +1952,14 @@ a:hover, a:focus {
 	background: url(../img/partners-detail-h1.png) center center no-repeat #81c630
 }
 
+.partners-detail-firehouse {
+	background: url(../img/partners-detail-firehouse.png) center center no-repeat #fff
+}
+
+.partners-detail-crossmedia {
+	background: url(../img/partners-detail-crossmedia.png) center center no-repeat #fff
+}
+
 .contact-content .in {
 	text-align: left
 }
