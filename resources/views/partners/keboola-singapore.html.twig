@@ -1,0 +1,67 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Keboola Singapore | Partners | {% endblock %}
+
+{% block head %}
+	{% include "header.html.twig" %}
+		<div class="header partners-detail-header"><div class="in">
+			<article>
+				<h1 class="h1-big">Keboola Singapore</h1>
+				<h2 class="h2-big"><strong>Work with Data, Make Money</strong></h2>
+				<div class="tags-list">
+					<span class="tag-item tag-item-second">#dataproducts</span>
+					<span class="tag-item tag-item-second">#datadriven</span>
+					<span class="tag-item tag-item-second">#newBI</span>
+				</div>
+			</article>
+		</div></div>
+{% endblock %}
+
+{% block content %}
+		<section>
+			<div class="partners-detail-head"><div class="in">
+				<ul>
+					<li class="item-first">
+						<h2>OUR TOP EXPERTISE</h2>
+						<p>Data Driven Organisations</p>
+					</li>
+					{#<li class="item-third">#}
+						{#<p>Business Data</p>#}
+					{#</li>#}
+				</ul>
+			</div></div>
+
+			<div class="partners-detail-description">
+				<div class="in">
+					<p>Founding Keboola Singapore team comes from mixed backgrounds combining traditional BI as well as modern social and digital marketing practice. We speak the language of our customers, understand questions they are asking and we know how to assist to get their business on the right track to become <strong>data driven organisations.</strong> </p>
+					<p>We focus on delivering end to end solutions directly to our clients and at the same time we are building network of partners across the region with variety of domain expertise.</p>
+				</div>
+			</div>
+
+
+
+			{# HOW CAN WE HELP YOU#}
+
+			<div class="article-box"><div class="in-second">
+				<h1><strong>How can we help you</strong></h1>
+				<p>
+				Supporting the maturation of Keboola’s technologies, we have learned everything about our products and what they have to offer. Regardless of your data source, complexity of problem, or special use case let us leverage our expertise and partner with you in solving issues and creating new opportunities.
+				</p>
+
+				<a href="{{ path('contact') }}" class="btn btn-white">Contact Us</a>
+
+				<ul class="box-list">
+					<li><article class="item item-second">
+						<div class="tags"><span class="tag-item">WIKI</span></div>
+						<h1>Getting Started with Keboola Connection</h1>
+						<p>Adam wrote this step-by-step tutorial to walk you through the basic functionality of KBC</p>
+						<a class="btn btn-white" href="http://wiki.keboola.com/home/keboola-connection/user-space/1-getting-started">Read more</a>
+					</article></li>
+				</ul>
+			</div></div>
+
+			{% include "events.html.twig" %}
+
+			<div class="get-in-touch-btn"><a href="{{ path('contact') }}">Interested in similar solution? Get in touch <i></i></a></div>
+		</section>
+{% endblock %}
