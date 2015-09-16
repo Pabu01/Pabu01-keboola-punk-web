@@ -962,7 +962,7 @@ header .mobile-menu {
 }
 
 footer {
-	padding: 60px 0 10px;
+	padding: 60px 0 20px;
 	width: 100%;
 	height: auto;
 	border-top: 2px solid #f0f5fb;
@@ -994,7 +994,7 @@ footer .love {
 	font-size: 14px;
 	font-size: 1.4rem;
 	line-height: 1.2em;
-	margin-top: 40px;
+	margin-top: 60px;
 	font-weight: 500;
 	color: #3d3f49;
 	opacity: .5;
