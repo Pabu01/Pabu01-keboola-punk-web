@@ -114,6 +114,11 @@ $app->get('/tableau/', function () use ($app) {
     return $app['twig']->render('tableau.html.twig');
 })->bind('tableau');
 
+// docs
+$app->get('/docs/{doc}', function ($doc) use ($app) {
+    return $app['twig']->render('docs/' . $doc . '.html.twig');
+})->bind('doc');
+
 // error page
 $app->error(function (\Exception $e, $code) use ($app) {
     return $app['twig']->render('error.html.twig', [
