@@ -2179,6 +2179,7 @@ a:hover, a:focus {
 	font-size: 1.4rem;
 	line-height: 1.2em;
 	font-weight: 700;
+	width: 50%;
 	color: #00a7fe
 }
 
@@ -2202,7 +2203,7 @@ a:hover, a:focus {
 .terms-content ol {
 	display: block;
 	list-style-type: decimal;
-	padding: 0em 4.5em 2em 1.5em;
+	padding: 0 4.5em 2em 1.5em;
 }
 
 .article .article-img-full {
