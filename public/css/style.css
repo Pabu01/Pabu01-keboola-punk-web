@@ -535,7 +535,7 @@ header h1 a {
 	display: block;
 	width: 100%;
 	height: 100%;
-	background: url(../img/logo.png) 0 0 no-repeat;
+	background: url(../img/keboola-logo-transparent-blue-small.png) 0 0 no-repeat;
 	margin-top: -2px
 }
 
@@ -576,7 +576,7 @@ header li a {
 	font-size: 1.5rem;
 	line-height: 40px;
 	font-weight: 500;
-	color: #fff;
+	color:  #9fabbd;
 	opacity: .7;
 	filter: alpha(opacity=70);
 	-webkit-transition: all .2s ease-in-out;
@@ -587,7 +587,7 @@ header li a {
 }
 
 header li a:hover, header li a:focus, header li a.act {
-	color: #fff;
+	color: #30b9ff;
 	opacity: 1;
 	text-decoration: none;
 	filter: alpha(opacity=100)
@@ -613,7 +613,7 @@ header .login-item {
 
 header .login-item a {
 	padding: 0 12px;
-	border: 2px solid #fff;
+	border: 2px solid #00a8ff;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
@@ -633,7 +633,7 @@ header .mobile-menu {
 .header article {
 	/*position: relative;*/
 	padding: 190px 0 0 0;
-	text-align: left
+	text-align: right;
 }
 
 .header-article {
@@ -645,13 +645,13 @@ header .mobile-menu {
 
 .header article h1, .header-article h1 {
 	position: relative;
-	margin: 0 0 50px 0;
-	padding: 0 0 50px 0;
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
 	font-size: 66px;
 	font-size: 6.6rem;
 	line-height: 1.2em;
 	font-weight: 400;
-	color: #fff;
+	color: #00a8ff;
 	letter-spacing: -1.5px
 }
 
@@ -679,7 +679,7 @@ header .mobile-menu {
 	margin: 0 0 15px 0;
 	font-size: 19px;
 	font-size: 1.9rem;
-	line-height: 1.2em;
+	line-height: 1.1em;
 	font-weight: 300;
 	color: #30b9ff;
 	text-transform: uppercase
@@ -700,11 +700,11 @@ header .mobile-menu {
 .header article p, .header-article p {
 	margin: 0 0 40px 0;
 	max-width: 670px;
-	font-size: 30px;
-	font-size: 3rem;
+	font-size: 20px;
+	font-size: 2.5rem;
 	line-height: 46px;
 	font-weight: 300;
-	color: #fff
+	color: #647082
 }
 
 .header article .customer-play-video {
@@ -757,7 +757,7 @@ header .mobile-menu {
 .case-study-mcpen {
 	width: 100%;
 	height: 820px;
-	background: url(../img/case-study-back-mcpen.jpg) center center no-repeat #172438;
+	background: white;
 	background-size: cover
 }
 
@@ -768,7 +768,7 @@ header .mobile-menu {
 .case-study-header article .btn-big {
 	margin-right: 28px
 }
-
+*/
 .partners-header {
 	width: 100%;
 	height: 740px;
@@ -1525,7 +1525,7 @@ a:hover, a:focus {
 	padding: 104px 0 0 0;
 	width: 100%;
 	height: 520px;
-	background: url(../img/cinemas-box-bg.jpg) center center no-repeat #060b16;
+	background: white;
 	background-size: cover
 }
 
@@ -1542,7 +1542,7 @@ a:hover, a:focus {
 	top: 0;
 	width: 58px;
 	height: 80px;
-	background: url(../img/cinemas-box-head-ico.png) 0 0 no-repeat
+	background: white;
 }
 
 .cinemas-box .cinemas-box-head h1 {
@@ -1551,7 +1551,7 @@ a:hover, a:focus {
 	font-size: 3.8rem;
 	line-height: 46px;
 	font-weight: 300;
-	color: #fff
+	color: #272e39;
 }
 
 .cinemas-box ul {
